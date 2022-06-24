@@ -162,7 +162,7 @@ $(document).ready(function(){
       $("#main6 .main_title h2").css({"transform":"translateY(-300%)","opacity":"0"});
     };
 
-    if(wscroll>=7500){ 
+    if(wscroll>=7400){ 
       $(".bottom_progress_in").css({"width":"110%"});
     }else{
 
