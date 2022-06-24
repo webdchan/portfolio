@@ -1,0 +1,171 @@
+/* Noto sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family:'Noto Sans', sans-serif; */
+
+/* Noto Sans KR */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* Nanum Pen */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+/* font-family:'Nanum Pen Script', cursive; */
+
+/* dongle */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+/* font-family: 'Dongle', sans-serif; */
+
+/* Raleway */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+/* Source Sans Pro */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+/* Exo */
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500&display=swap');
+/* font-family: 'Exo', sans-serif; */
+
+/* Staatliches  */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+/* font-family: 'Staatliches', cursive; */
+
+/* Bellota */
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap');
+/* font-family: 'Bellota', cursive; */
+
+/* Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', cursive; */
+
+/* 나눔스퀘어 */
+
+@font-face{
+  font-family:NanumSquareL;
+  src:url('../font/NanumSquareL.woff') format('woff');
+}
+@font-face{
+  font-family:NanumSquareR;
+  src:url('../font/NanumSquareR.woff') format('woff');
+}
+@font-face{
+  font-family:NanumSquareB;
+  src:url('../font/NanumSquareB.woff') format('woff');
+}
+@font-face{
+  font-family:NanumSquareEB;
+  src:url('../font/NanumSquareEB.woff') format('woff');
+}
+
+/* NEXON Lv1 */
+
+@font-face{
+  font-family:NEXON1L;
+  src:url('../font/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+}
+
+@font-face{
+  font-family:NEXON1R;
+  src:url('../font/NEXON Lv1 Gothic OTF.woff') format('woff');
+}
+
+@font-face{
+  font-family:NEXON1LB;
+  src:url('../font/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+}
+
+/* Roboto */
+
+@font-face{
+  font-family:RobotoL;
+  src:url('../font/Roboto-Light.woff') format('woff');
+}
+
+@font-face{
+  font-family:RobotoR;
+  src:url('../font/Roboto-Regular.woff') format('woff');
+}
+
+@font-face{
+  font-family:RobotoB;
+  src:url('../font/Roboto-Bold.woff') format('woff');
+}
+
+@font-face{
+  font-family:RobotoBL;
+  src:url('../font/Roboto-Black.woff') format('woff');
+}
+
+/* GowunDodum */
+
+@font-face{
+  font-family:GowunDodumR;
+  src:url('../font/GowunDodum-Regular.woff') format('woff');
+}
+
+/* TMON */
+
+@font-face{
+  font-family:Tmon;
+  src:url('../font/TMONBlack.woff') format('woff');
+}
+
+@font-face{
+  font-family:TmonE;
+  src:url('../font/TMONTium.woff') format('woff');
+}
+
+/* S-CORE DREAM*/
+
+@font-face{
+  font-family:SCD1;
+  src:url('../font/SCDream1.woff') format('woff');
+}
+
+@font-face{
+  font-family:SCD2;
+  src:url('../font/SCDream2.woff') format('woff');
+}
+
+@font-face{
+  font-family:SCD3;
+  src:url('../font/SCDream3.woff') format('woff');
+}
+
+@font-face{
+  font-family:SCD4;
+  src:url('../font/SCDream4.woff') format('woff');
+}
+
+@font-face{
+  font-family:SCD5;
+  src:url('../font/SCDream5.woff') format('woff');
+}
+
+@font-face{
+  font-family:SCD6;
+  src:url('../font/SCDream6.woff') format('woff');
+}
+
+@font-face{
+  font-family:SCD7;
+  src:url('../font/SCDream7.woff') format('woff');
+}
+
+@font-face{
+  font-family:SCD8;
+  src:url('../font/SCDream8.woff') format('woff');
+}
+
+@font-face{
+  font-family:SCD9;
+  src:url('../font/SCDream9.woff') format('woff');
+}

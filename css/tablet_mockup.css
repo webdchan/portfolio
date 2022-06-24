@@ -1,0 +1,190 @@
+.mockup_tablet {
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:1000;
+}
+
+.mockup_tablet_in{
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index:2000;
+  border: 1px solid #ddd;
+  width: 1180px;
+  height: 820px;
+  background-color: #e1d6f4;
+  position: relative;
+  border-radius: 45px;
+}
+
+.mockup_tablet_in:before {
+  content: '';
+  position: absolute;
+  width: 97%;
+  height: 98%;
+  border-radius: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.mockup_tablet_in .iframe-url {
+  position: absolute;
+  width: 1055px;
+  height: 770px;
+  background-color: #777;
+  border: 1px solid #eee;
+  border-radius: 30px 20px 20px 30px;
+  color: #fff;
+  font-size: 2rem;
+  top: 50%;
+  left: 48.7%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mockup_tablet_in .iframe-url iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px 12px 27px 27px;
+}
+
+.mockup_tablet_in .camera {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 420px;
+}
+
+.mockup_tablet_in .camera span {
+  background-color: #555;
+  position: absolute;
+}
+
+.mockup_tablet_in .camera span:nth-child(1) {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  top: 130px;
+  right: 20px;
+}
+
+.mockup_tablet_in .camera span:nth-child(2) {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 182px;
+  right: 25px;
+}
+
+.mockup_tablet_in .camera span:nth-child(3) {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  bottom: 182px;
+  right: 25px;
+}
+
+.mockup_tablet_in .camera span:nth-child(4) {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  bottom: 135px;
+  right: 22px;
+}
+
+.mockup_tablet_in .power {
+  position: absolute;
+  top: 100%;
+  right: 380px;
+}
+
+.mockup_tablet_in .power span {
+  position: absolute;
+  width: 150px;
+  height: 7px;
+  border-radius: 0 5px 5px 0;
+  background-color: blue;
+}
+
+.mockup_tablet_in .volume {
+  position: absolute;
+  bottom: 100%;
+  right: 200px;
+  width: 250px;
+  height: 6px;
+}
+
+.mockup_tablet_in .volume span {
+  position: absolute;
+  width: 65px;
+  height: 6px;
+  border-radius: 0 5px 5px 0;
+  transform: rotate(180deg);
+  background-color: blue;
+}
+
+.mockup_tablet_in .volume span:nth-child(1) {
+  right: 0;
+  width: 50px;
+  height: 6px;
+}
+
+.mockup_tablet_in .volume span:nth-child(2) {
+  right: 100px;
+}
+
+.mockup_tablet_in .volume span:nth-child(3) {
+  left: 0;
+}
+
+.mockup_tablet_in .volume span,
+.mockup_tablet_in .power span {
+  background-color: #baaac4;
+}
+
+/* 메뉴 뒤로 나오는 검정배경 */
+.mockup_tablet .w_back4{ 
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+}
+
+/*버튼영역*/
+.mockup_tablet .w_btn4{
+  position:fixed;
+  left:78%;
+  top:-45px;
+  margin-left:300px;
+  width:110px;
+  height:140px;
+  color:#fff;
+  text-align:center;
+  overflow:hidden;
+  z-index:10000;
+}
+
+.mockup_tablet .w_btn4 .w_btn_close4{ /*닫기버튼*/
+  height:90px;
+  width:110px;
+  cursor:pointer;
+  border-bottom:1px solid #fff;
+}
+
+.mockup_tablet .w_btn4 .w_btn_close4 i{ /*아이콘폰트*/
+  position:relative;
+  top:15px;
+  font-size:60px;
+}
