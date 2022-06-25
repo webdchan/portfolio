@@ -149,10 +149,10 @@ $(document).ready(function(){
     };
 
     if(wscroll>=5800){ 
-      $("#main5 .main_title h2").css({"transform":"translateY(0px) scale(1.1)","opacity":"1"});  //밀어놓은 위치 설정취소(none)
+      $("#main5 .main_title").css({"transform":"translateY(0px) scale(1.1)","opacity":"1"});  //밀어놓은 위치 설정취소(none)
       $(".bottom_progress_in").css({"width":"75%"});
     }else{
-      $("#main5 .main_title h2").css({"transform":"translateY(300%)","opacity":"0"});
+      $("#main5 .main_title").css({"transform":"translateY(300%)","opacity":"0"});
     };
 
     if(wscroll>=6750){ 
@@ -183,11 +183,17 @@ $(document).ready(function(){
     };
 
     /* main2 tabmenu panel 효과 */
-
     if(wscroll>=1250){ 
       $(".webdesign_tab_panel").css({"transform":"translateY(0px)","opacity":"1"});  //밀어놓은 위치 설정취소(none)
     }else{
       $(".webdesign_tab_panel").css({"transform":"translateY(200%)","opacity":"1"});
+    };
+
+    // main5 모바일 컨텐츠 효과
+    if(wscroll>=6250){ 
+      $("#main5 .mobilepage, #main5 .page_info").css({"transform":"scale(1)","opacity":"1"});
+    }else{
+      $("#main5 .mobilepage, #main5 .page_info").css({"transform":"scale(0)","opacity":"0"});  
     };
   });
 
@@ -301,7 +307,7 @@ $(document).ready(function(){
 
   /* 웹퍼블리싱 */
 
-  //imac 화면(오버시 화면 올라가게)_____________
+  //화면(오버시 화면 올라가게)_____________
   $(".page_visual_display").mouseenter(function(){
     $(this).css("background-position","0 100%");
   });
@@ -309,18 +315,15 @@ $(document).ready(function(){
     $(this).css("background-position","0 0");
   });
 
-  /* 반응형웹 */
+  //화면(오버시 옆으로 가게)
+  $("#main5 .mobilephone1 .page_visual_display").mouseenter(function(){
+    $(this).css("background-position","100% 0");
+  });
+  $("#main5 .mobilephone1 .page_visual_display").mouseleave(function(){
+    $(this).css("background-position","0 0");
+  });
 
-  //배경 전환
-  // $("#main4 .responsive_pc, #main4 .page_info .page_detail1 span a").hover(function(){
-  //   $("#main4").css({"background-image":"url(../images/main4_visual1.png)"},"easeOutCirc");
-  // });
-  // $("#main4 .responsive_mobile, #main4 .page_info .page_detail2 span:nth-of-type(1) a").hover(function(){
-  //   $("#main4").css({"background-image":"url(../images/main4_visual2.png)"},"easeOutCirc");
-  // });
-  // $("#main4 .responsive_tablet, #main4 .page_info .page_detail2 span:nth-of-type(2) a").hover(function(){
-  //   $("#main4").css({"background-image":"url(../images/main4_visual3.png)"},"easeOutCirc");
-  // });
+  /* 반응형웹 */
 
   // 장비 크기 전환
   $("#main4 .responsive_pc, #main4 .page_info .page_detail1 span a").mouseenter(function(){
@@ -348,33 +351,90 @@ $(document).ready(function(){
     $(".responsive_mobile, .responsive_pc").stop(true,true).css({"opacity":"1"},"easeOutCirc");
   });
 
-  /* 모바일 목업*/
+  /* 반응형 모바일 목업*/
   //DETAIL 버튼 클릭시 모달창2 띄우기___________
   $(".responsive_mobile .page_visual_display a, #main4 .page_info .page_detail2 span:nth-of-type(1) a").click(function(){
     $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".mockup_mobile").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $(".mockup_mobile1").fadeIn(); //w_pop index에 해당하는 팝업보이기
   });
 
-  // 모바일 닫기
-  $(".mockup_mobile .w_btn_close3, .mockup_mobile .w_back3").click(function(){
+  // 반응형 모바일 닫기
+  $(".mockup_mobile1 .w_btn_close3, .mockup_mobile1 .w_back3").click(function(){
     $("html").css({overflowY:"scroll"});
-    $(".mockup_mobile").stop(true,true).fadeOut();
-    $(".mockup_mobile .w_pop3>li").stop(true,true).hide();
+    $(".mockup_mobile1").stop(true,true).fadeOut();
+    $(".mockup_mobile1 .w_pop3>li").stop(true,true).hide();
  });
 
- /* 태블렛 목업*/
+ /* 반응형 태블렛 목업*/
   //DETAIL 버튼 클릭시 모달창2 띄우기___________
   $(".responsive_tablet .page_visual_display a, #main4 .page_info .page_detail2 span:nth-of-type(2) a").click(function(){
     $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
     $(".mockup_tablet").fadeIn(); //w_pop index에 해당하는 팝업보이기
   });
 
-  // 모바일 닫기
+  // 반응형 태블렛 닫기
   $(".mockup_tablet .w_btn_close4, .mockup_tablet .w_back4").click(function(){
     $("html").css({overflowY:"scroll"});
     $(".mockup_tablet").stop(true,true).fadeOut();
     $(".mockup_tablet .w_pop4>li").stop(true,true).hide();
  });
+
+ /* main5 모바일 비주얼 */
+
+   //자동으로 슬라이드 함수생성
+   function bannerAuto(){
+
+    $(".mobilepage .mobile_visual ul").stop().animate({marginLeft:"-=280px"},1200,function(){
+      $(".mobilepage .mobile_visual ul li:first-child").appendTo(".mobilepage .mobile_visual ul"); //첫번째 이미지 맨뒤로 이동
+      $(this).css({marginLeft:"0px"}); //최종목적지
+    });
+
+  }
+  bauto=setInterval(bannerAuto,2400);
+
+
+     //다음보기
+    $(".mobile_visual_btn_right").click(function(){
+      clearInterval(bauto);
+      $(".mobilepage .mobile_visual ul").stop().animate({marginLeft:"-=280px"},1200,function(){
+        $(".mobilepage .mobile_visual ul li:first-child").appendTo(".mobilepage .mobile_visual ul"); //첫번째 이미지 맨뒤로 이동
+        $(this).css({marginLeft:"0px"}); //최종목적지
+      });
+      bauto=setInterval(bannerAuto,2400);
+    });
+  
+    //이전보기
+    $(".mobile_visual_btn_left").click(function(){
+      clearInterval(bauto);
+      $(".mobilepage .mobile_visual ul").stop().animate({marginLeft:"+=280px"},1200,function(){
+        $(".mobilepage .mobile_visual ul li:last-child").prependTo(".mobilepage .mobile_visual ul"); //첫번째 이미지 맨뒤로 이동
+        $(this).css({marginLeft:"0px"}); //최종목적지
+      });
+      bauto=setInterval(bannerAuto,2400);
+    });
+
+    //마우스를 올리면 슬라이드 자동함수 멈추고, 마우스를 내리면 다시 자동함수 실행...
+    $(".mobilepage .mobile_visual").hover(function(){
+      clearInterval(bauto);
+    },function(){
+      bauto=setInterval(bannerAuto,2400);
+    });
+
+    /* 모바일 목업*/
+  //DETAIL 버튼 클릭시 모달창2 띄우기___________
+  $("#main5 .mobilepage .mobile_display .page_visual_display span a, #main5 .page_info .page_info_bottom .page_detail1 a").click(function(){
+    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
+    $(".mockup_mobile2").fadeIn(); //w_pop index에 해당하는 팝업보이기
+  });
+
+  // 모바일 닫기
+  $(".mockup_mobile2 .w_btn_close5, .mockup_mobile2 .w_back5").click(function(){
+    $("html").css({overflowY:"scroll"});
+    $(".mockup_mobile2").stop(true,true).fadeOut();
+    $(".mockup_mobile2 .w_pop5>li").stop(true,true).hide();
+  });
+  
+  
 
 });
 

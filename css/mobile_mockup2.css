@@ -1,4 +1,4 @@
-.mockup_mobile1{
+.mockup_mobile2{
   display:none;
   position:fixed;
   top:0;
@@ -8,20 +8,20 @@
   z-index:1000;
 }
 
-.mockup_mobile_in1 {
+.mockup_mobile_in2{
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
   z-index:2000;
-  border: 1px solid #ddd;
+  border: 1px solid rgb(255, 223, 223);
   width: 430px;
   height: 790px;
-  background-color: #ece6f8;
+  background-color: rgb(255, 223, 223);
   position: relative;
   border-radius: 40px;
 }
 
-.mockup_mobile_in1:before {
+.mockup_mobile_in2:before {
   content: '';
   position: absolute;
   width: 96.5%;
@@ -33,7 +33,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.mockup_mobile_in1 .iframe-url {
+.mockup_mobile_in2 .iframe-url{
   position: absolute;
   width: 398px;
   height: 715px;
@@ -50,13 +50,13 @@
   align-items: center;
 }
 
-.mockup_mobile_in1 .iframe-url iframe {
+.mockup_mobile_in2 .iframe-url iframe {
   width: 100%;
   height: 100%;
   border-radius: 12px 12px 27px 27px;
 }
 
-.mockup_mobile_in1 .camera {
+.mockup_mobile_in2 .camera {
   position: absolute;
   top: 14px;
   left: 50%;
@@ -65,12 +65,12 @@
   height: 40px;
 }
 
-.mockup_mobile_in1 .camera span {
+.mockup_mobile_in2 .camera span {
   background-color: #555;
   position: absolute;
 }
 
-.mockup_mobile_in1 .camera span:nth-child(1) {
+.mockup_mobile_in2 .camera span:nth-child(1) {
   width:23px;
   height:23px;
   border-radius:50%;
@@ -79,7 +79,7 @@
   transform:translateY(-50%);
 }
 
-.mockup_mobile_in1 .camera span:nth-child(2) {
+.mockup_mobile_in2 .camera span:nth-child(2) {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -88,7 +88,7 @@
   transform: translateY(-50%);
 }
 
-.mockup_mobile_in1 .camera span:nth-child(3) {
+.mockup_mobile_in2 .camera span:nth-child(3) {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -97,7 +97,7 @@
   transform: translateY(-50%);
 }
 
-.mockup_mobile_in1 .camera span:nth-child(4) {
+.mockup_mobile_in2 .camera span:nth-child(4) {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -106,21 +106,21 @@
   transform: translateY(-50%);
 }
 
-.mockup_mobile_in1 .power {
+.mockup_mobile_in2 .power {
   position: absolute;
   right: 0;
   top: 150px;
 }
 
-.mockup_mobile_in1 .power span {
+.mockup_mobile_in2 .power span {
   position: absolute;
   width: 6px;
   height: 100px;
   border-radius: 0 5px 5px 0;
-  background-color: blue;
+  background-color: rgb(255, 150, 150);
 }
 
-.mockup_mobile_in1 .volume {
+.mockup_mobile_in2 .volume {
   position: absolute;
   width: 6px;
   height: 200px;
@@ -128,36 +128,36 @@
   right: 100%;
 }
 
-.mockup_mobile_in1 .volume span {
+.mockup_mobile_in2 .volume span {
   position: absolute;
   width: 6px;
   height: 55px;
   border-radius: 0 5px 5px 0;
   transform: rotate(180deg);
-  background-color: blue;
+  background-color: rgb(255, 150, 150);
 }
 
-.mockup_mobile_in1 .volume span:nth-child(1) {
+.mockup_mobile_in2 .volume span:nth-child(1) {
   top: 0;
   width: 5px;
   height: 40px;
 }
 
-.mockup_mobile_in1 .volume span:nth-child(2) {
+.mockup_mobile_in2 .volume span:nth-child(2) {
   bottom: 80px;
 }
 
-.mockup_mobile_in1 .volume span:nth-child(3) {
+.mockup_mobile_in2 .volume span:nth-child(3) {
   bottom: 0;
 }
 
-.mockup_mobile_in1 .volume span,
-.mockup_mobile_in1 .power span{
-  background-color: #baaac4;
+.mockup_mobile_in2 .volume span,
+.mockup_mobile_in2 .power span{
+  background-color: rgb(217, 195, 231), 208, 208);
 }
 
 /* 메뉴 뒤로 나오는 검정배경 */
-.mockup_mobile1 .w_back3{ 
+.mockup_mobile2 .w_back5{ 
   position:fixed;
   left:0;
   top:0;
@@ -167,7 +167,7 @@
 }
 
 /*버튼영역*/
-.mockup_mobile1 .w_btn3{
+.mockup_mobile2 .w_btn5{
   position:fixed;
   left:50%;
   top:-20px;
@@ -180,14 +180,14 @@
   z-index:10000;
 }
 
-.mockup_mobile1 .w_btn3 .w_btn_close3{ /*닫기버튼*/
+.mockup_mobile2 .w_btn5 .w_btn_close5{ /*닫기버튼*/
   width:110px;
   height:90px;
   cursor:pointer;
   border-bottom:1px solid #fff;
 }
 
-.mockup_mobile1 .w_btn3 .w_btn_close3 i{ /*아이콘폰트*/
+.mockup_mobile2 .w_btn5 .w_btn_close5 i{ /*아이콘폰트*/
   position:relative;
   top:15px;
   font-size:60px;
