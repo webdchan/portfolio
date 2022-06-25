@@ -38,13 +38,15 @@ $(document).ready(function(){
       return false;
   });
 
-    /* ----- 사이드 사각도형 스크롤 시 색상 변경  */
+    /* ----- 탑버튼 및사이드 사각도형 스크롤 시 색상 변경  */
     $(window).scroll(function(){
       $(".sd_design").stop(true,true).css({display:"none"});
+      $(".top_button").stop(true,true).css({display:"none"});
 
       if($(this).scrollTop()>250){
         $(".sd_design").stop(true,true).css({display:"block", transition:"all 0.3s easy-in"});
         $(".sd_design").removeClass("sd_active");
+        $(".top_button").stop(true,true).css({display:"block"});
       
         if($(this).scrollTop()>700){
       
@@ -109,6 +111,11 @@ $(document).ready(function(){
     });
     $(".sd_d6").click(function(){
       $("html,body").stop(true,true).animate({scrollTop:"7000"},"easeOutCirc");
+    });
+
+    /* topbutton 스크롤 */
+    $(".top_button").click(function(){
+      $("html,body").stop(true,true).animate({scrollTop:"0"},800,"easeOutCirc");
     });
 
 
@@ -190,7 +197,7 @@ $(document).ready(function(){
     };
 
     // main5 모바일 컨텐츠 효과
-    if(wscroll>=6250){ 
+    if(wscroll>=5900){ 
       $("#main5 .mobilepage, #main5 .page_info").css({"transform":"scale(1)","opacity":"1"});
     }else{
       $("#main5 .mobilepage, #main5 .page_info").css({"transform":"scale(0)","opacity":"0"});  

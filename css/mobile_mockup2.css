@@ -13,10 +13,10 @@
   left:50%;
   transform: translate(-50%,-50%);
   z-index:2000;
-  border: 1px solid rgb(255, 223, 223);
+  border: 1px solid rgb(252, 233, 233);
   width: 430px;
   height: 790px;
-  background-color: rgb(255, 223, 223);
+  background-color: rgb(252, 231, 231);
   position: relative;
   border-radius: 40px;
 }
@@ -117,7 +117,7 @@
   width: 6px;
   height: 100px;
   border-radius: 0 5px 5px 0;
-  background-color: rgb(255, 150, 150);
+  background-color:rgb(186, 186, 186);
 }
 
 .mockup_mobile_in2 .volume {
@@ -134,7 +134,7 @@
   height: 55px;
   border-radius: 0 5px 5px 0;
   transform: rotate(180deg);
-  background-color: rgb(255, 150, 150);
+  background-color:rgb(186, 186, 186);
 }
 
 .mockup_mobile_in2 .volume span:nth-child(1) {
@@ -153,7 +153,7 @@
 
 .mockup_mobile_in2 .volume span,
 .mockup_mobile_in2 .power span{
-  background-color: rgb(217, 195, 231), 208, 208);
+  background-color:rgb(186, 186, 186);
 }
 
 /* 메뉴 뒤로 나오는 검정배경 */
