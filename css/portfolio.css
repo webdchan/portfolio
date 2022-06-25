@@ -61,7 +61,7 @@ header .header_top{
   display:flex;
   justify-content:center;
   align-items:center;
-  background-color:white;
+  background-color:rgb(242, 242, 242);
   width:100%;
   top:0px;
   padding:10px 0 5px;
@@ -78,14 +78,14 @@ header .header_top .svg{
   display:flex;
   justify-content:center;
   align-items:center;
-  height:100px;
+  height:95px;
   animation:svg_animation 4s;
   z-index:100;
 }
 
 header .header_top .svg img{
   width:250px;
-  height:100px;
+  height:95px;
 }
 
 header .header_top_right{
@@ -104,7 +104,7 @@ header .header_top_right .header_date{
 header .top_nav{
   background-color: white;
   position:absolute;
-  top:115px;
+  top:110px;
   width:100%;
   margin:0 auto;
   padding:5px 0;
@@ -1420,7 +1420,7 @@ section #main3{
 }
 
 section #main4{
-  background:linear-gradient(-45deg, #D9AFD9, #97D9E1, #acf7cf, #f5f2a5);
+  background:linear-gradient(-45deg, #f3e0f3, #d1edf0, #d6f2e3, #f1f0db);
 	background-size:300% 300%;
 	animation:gradient 5s ease infinite;
   /* background-color: #8EC5FC;
