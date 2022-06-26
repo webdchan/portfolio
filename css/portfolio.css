@@ -1219,7 +1219,6 @@ section #main2{
    border-top:1px solid #fff;
 }
 
-
 /* 웹퍼블리싱 */
 section #main3{
   height:2300px;
@@ -2123,15 +2122,26 @@ section #main6{
 }
 
 .webplanning_tab_panel>li>ul:nth-of-type(2)>li{
-  display: flex;
+  display:flex;
+  margin:50px auto;
 }
 
-/* main6 content info */
+#main6 .webplanning_content{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width:700px;
+}
 
-#main4 .page_info{
-  width:550px;
-  margin:45px 0 50px 30px;
-  background-image:url(../images/main4_info_bg.png);
+#main6 .webplanning_content img{
+  width:100%;
+}
+
+/* main6 webplanning info */
+
+#main6 .webplanning_info{
+  width:500px;
+  margin:20px;
   background-color:#fff;
   padding:40px 30px 35px;
   overflow:hidden;
@@ -2139,64 +2149,46 @@ section #main6{
   box-shadow:1px 1px 15px rgba(0, 0, 0, 0.3);
 }
 
-#main4 h3{
-  font-family:SCD3;
-  font-size:18px;
+#main6 .webplanning_info h3{
+  text-align:center;
+  font-family:SCD4;
+  font-size:30px;
+  letter-spacing:4px;
+  margin-bottom:15px;
+}
+
+#main6 .webplanning_info h4{
+  text-align:center;
+  font-family:SCD2;
+  font-size:20px;
   letter-spacing:3px;
 }
 
-#main4 .webpage_title{
+#main6 .webplanning_info .page_icon{
   display:flex;
   justify-content:center;
   align-items:center;
 }
 
-#main4 h3 span{
-  position:relative;
-  margin-right:40px;
-  font-family:SCD4;
-  font-size:27px;
-  letter-spacing:4px;
+#main6 .webplanning_info .page_icon img{
+  width:45px;
+  height:45px;
+  margin:20px 10px 0;
 }
 
-#main4 h3 span:after{
-  position:absolute;
-  left:110%;
-  bottom:4px;
-  content:'';
-  width:3px;
-  height:15px;
-  border-radius:8px;
-  background-color:#23338d;
-}
-
-#main4 .page_info>h3{margin:32px 0 10px 0;}
-
-#main4 .page_icon{
-  display:flex;
-  justify-content:end;
-  align-items:center;
-}
-
-#main4 .page_icon img{
-  width:32px;
-  height:32px;
-  margin:20px 3px 10px;
-}
-
-#main4 .page_info>p{
+#main6 .webplanning_info>p{
   position:relative;
   line-height:20px;
-  margin:20px 0 30px 10px;
+  margin:20px 0 30px 50px;
 }
 
-#main4 .page_info>p>span:nth-of-type(1){
+#main6 .webplanning_info>p>span:nth-of-type(1){
   font-family:TmonE;
   font-size:18px;
   line-height:26px;
 }
 
-#main4 .page_info>p>span:nth-of-type(2):after{
+#main6 .webplanning_info>p>span:nth-of-type(2):after{
   position:absolute;
   left:110px;
   bottom:1px;
@@ -2207,7 +2199,7 @@ section #main6{
   border-radius:8px;
 }
 
-#main4 .page_info>p>span:nth-of-type(2){
+#main6 .webplanning_info>p>span:nth-of-type(2){
   position:relative;
   margin-left:4px;
   font-family:SCD4;
@@ -2215,7 +2207,7 @@ section #main6{
   letter-spacing:1px;
 }
 
-#main4 .page_info>p>span:nth-of-type(3){
+#main6 .webplanning_info>p>span:nth-of-type(3){
   position:absolute;
   left:125px;
   bottom:5px;
@@ -2224,11 +2216,11 @@ section #main6{
   letter-spacing:1px;
 }
 
-#main4 .page_info>p:nth-of-type(3)>span:nth-of-type(3){
+#main6 .webplanning_info>p:nth-of-type(3)>span:nth-of-type(3){
   bottom:-5px;
 }
 
-#main4 .page_info .workbar{
+#main6 .webplanning_info .workbar{
   margin:32px auto 22px;
   width:350px;
   height:38px;
@@ -2241,44 +2233,6 @@ section #main6{
   letter-spacing:1px;
   background-color:#2b3b92d8;
 }
-
-#main4 .page_info .page_detail1, #main4 .page_info .page_detail2{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
-#main4 .page_info .page_detail1 span a, #main4 .page_info .page_detail2 span a{
-  display:block;
-  width:200px;
-  height:40px;
-  margin:0 10px 15px;
-  text-align:center;
-  line-height:40px;
-  font-family:SCD4;
-  font-size:17px;
-  letter-spacing:1px;
-  transition:all 0.5s ease-in-out;
-  border:1px solid #2b3b92d8;
-  color:#2b3b92d8;
-}
-
-#main4 .page_info .page_detail1 span a{width:420px; height:40px;}
-#main4 .page_info .page_detail1 span a:hover{
-  background-color:#2b3b92d8; 
-  color:#fff;
-}
-#main4 .page_info .page_detail2 span:nth-of-type(1) a:hover{
-  background-color:#e0ca4b9d; 
-  color:#fff;
-  border:1px solid #e0ca4b9d; 
-}
-#main4 .page_info .page_detail2 span:nth-of-type(2) a:hover{
-  background-color:#d878d36f; 
-  color:#fff;
-  border:1px solid #d878d36f;
-}
-
 
 /* main5 c2 모바일시안 */
 
