@@ -93,7 +93,7 @@ $(document).ready(function(){
       }
     });
 
-    /* 사이드 사각도형 클릭 시 스크롤 */ 
+    /* nav 클릭 시 스크롤 */ 
     $(".sd_d1").click(function(){
       $("html,body").stop(true,true).animate({scrollTop:"950"},"easeOutCirc");
     });
