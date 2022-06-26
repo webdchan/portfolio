@@ -2127,15 +2127,79 @@ section #main6{
 }
 
 #main6 .webplanning_content{
+  position:relative;
   display:flex;
   justify-content:center;
   align-items: center;
   width:700px;
+  margin-right:40px;
 }
 
 #main6 .webplanning_content img{
   width:100%;
 }
+
+#webplanning_tab1_c1_gallery{
+  position:absolute;
+  top:73px;
+  left:64px;
+  width:571.5px;
+  height:372px;
+}
+
+.largeImg li{
+  width:571.5px;
+  height:372px;
+	display:none;
+  overflow: hidden;
+}
+
+.largeImg li:first-child{display:block;}
+
+.largeImg li img{
+  width:571.5px;
+}
+
+.thumbs{
+	position:absolute;
+  display:flex;
+	top:10px;	
+	left:10px;	
+}
+.thumbs li{
+	margin-right:10px;
+	opacity:0.3;
+  border:1px solid black;
+}
+.thumbs li:first-child{opacity:1;}
+.thumbs li img{
+	width:75px;
+	height:57px;
+}
+
+#webplanning_tab1_c1_gallery .left_btn{
+  position:absolute;
+  top:150px;
+  left:-100px;
+}
+
+#webplanning_tab1_c1_gallery .left_btn img{
+  width:80px;
+  height:80px;
+}
+
+#webplanning_tab1_c1_gallery .right_btn{
+  position:absolute;
+  top:150px;
+  right:-100px;
+}
+
+#webplanning_tab1_c1_gallery .right_btn img{
+  width:80px;
+  height:80px;
+}
+
+
 
 /* main6 webplanning info */
 
@@ -2143,7 +2207,7 @@ section #main6{
   width:500px;
   margin:20px;
   background-color:#fff;
-  padding:40px 30px 35px;
+  padding:60px 30px;
   overflow:hidden;
   border-radius:20px;
   box-shadow:1px 1px 15px rgba(0, 0, 0, 0.3);
@@ -2233,6 +2297,8 @@ section #main6{
   letter-spacing:1px;
   background-color:#2b3b92d8;
 }
+
+
 
 /* main5 c2 모바일시안 */
 

@@ -454,16 +454,6 @@ $(document).ready(function(){
   });
   
 
-  $(".webplanning_tab1_c_panel>li:not(:first)").hide();
-  //첫번째를 제외한 나머지 내용
-
-  $(".webplanning_tab1_c>li").click(function(){
-    $(".webplanning_tab1_c>li").removeClass("webplanning_tab1_c_selected"); //기존선택된 selected 클래스 삭제
-    $(this).addClass("webplanning_tab1_c_selected"); //새로 선택된 selected 클래스 생성
-    $(".webplanning_tab1_c_panel>li").hide(); //기존의 보여진 내용 숨기기
-    $($(this).find("a").attr("href")).stop(true,true).fadeIn(); //새로 선택된 내용 href 연결된 내용 보여주기
-  });
-
   $(".webplanning_tab2_c_panel>li:not(:first)").hide();
   //첫번째를 제외한 나머지 내용
 
@@ -473,6 +463,61 @@ $(document).ready(function(){
     $(".webplanning_tab2_c_panel>li").hide(); //기존의 보여진 내용 숨기기
     $($(this).find("a").attr("href")).stop(true,true).fadeIn(); //새로 선택된 내용 href 연결된 내용 보여주기
   });
+
+  $(".webplanning_tab3_c_panel>li:not(:first)").hide();
+  //첫번째를 제외한 나머지 내용
+
+  $(".webplanning_tab3_c>li").click(function(){
+    $(".webplanning_tab3_c>li").removeClass("webplanning_tab3_c_selected"); //기존선택된 selected 클래스 삭제
+    $(this).addClass("webplanning_tab3_c_selected"); //새로 선택된 selected 클래스 생성
+    $(".webplanning_tab3_c_panel>li").hide(); //기존의 보여진 내용 숨기기
+    $($(this).find("a").attr("href")).stop(true,true).fadeIn(); //새로 선택된 내용 href 연결된 내용 보여주기
+  });
+
+   //썸네일,큰이미지,설명텍스트가 바뀌는 함수 만들기
+
+   let goldidx=0; //기존이미지
+   let gidx=0; //선택되는 이미지
+ 
+   function galleryImg(gidx){ //gidx는 선택되는 이미지
+ 
+     if(goldidx!=gidx){ //기존의 이미지와 선택된 이미지가 다를때...
+ 
+       $(".thumbs li").eq(goldidx).css({"opacity":0.3}); //기존의 썸네일 흐리게
+       $(".thumbs li").eq(gidx).css({"opacity":1}); //선택된 썸네일 선명하게
+       $(".largeImg li").eq(goldidx).css({"display":"none"}); //기존 이미지 사라짐
+       $(".largeImg li").eq(gidx).stop().css({"display":"block"}); //선택된 이미지 나타남
+     }
+ 
+     goldidx=gidx; //선택된 이미지는 다시 기존이미지로 저장
+ 
+   }
+ 
+   //썸네일버튼 클릭시.....
+ 
+   $(".thumbs li").click(function(){
+     gidx=$(this).index();
+     galleryImg(gidx);
+   });
+ 
+   //이전버튼 클릭시.....
+   $(".left_btn").click(function(){
+     gidx--;
+     if(gidx<0){//선택한 이미지가 0일때 다시 맨뒤부터 다시 시작
+       gidx=8;
+     }
+     galleryImg(gidx);
+   });
+ 
+   //다음버튼 클식시.....
+   $(".right_btn").click(function(){
+     gidx++;
+     if(gidx>8){ // 선택한 이미지가 마지막일때 다시 맨처음부터 다시 시작
+       gidx=0;
+ 
+     }
+     galleryImg(gidx);
+   });
 
   
 
