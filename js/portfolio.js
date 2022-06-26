@@ -440,8 +440,43 @@ $(document).ready(function(){
     $(".mockup_mobile2").stop(true,true).fadeOut();
     $(".mockup_mobile2 .w_pop5>li").stop(true,true).hide();
   });
-  
+
+  /* 웹기획 탭메뉴 */
+ 
+  $(".webplanning_tab_panel>li:not(:first)").hide();
+  //첫번째를 제외한 나머지 내용
+
+  $(".webplanning_tab>li").click(function(){
+    $(".webplanning_tab>li").removeClass("webplanning_tab_selected"); //기존선택된 selected 클래스 삭제
+    $(this).addClass("webplanning_tab_selected"); //새로 선택된 selected 클래스 생성
+    $(".webplanning_tab_panel>li").hide(); //기존의 보여진 내용 숨기기
+    $($(this).find("a").attr("href")).stop(true,true).fadeIn(); //새로 선택된 내용 href 연결된 내용 보여주기
+  });
   
 
+  $(".webplanning_tab1_c_panel>li:not(:first)").hide();
+  //첫번째를 제외한 나머지 내용
+
+  $(".webplanning_tab1_c>li").click(function(){
+    $(".webplanning_tab1_c>li").removeClass("webplanning_tab1_c_selected"); //기존선택된 selected 클래스 삭제
+    $(this).addClass("webplanning_tab1_c_selected"); //새로 선택된 selected 클래스 생성
+    $(".webplanning_tab1_c_panel>li").hide(); //기존의 보여진 내용 숨기기
+    $($(this).find("a").attr("href")).stop(true,true).fadeIn(); //새로 선택된 내용 href 연결된 내용 보여주기
+  });
+
+  $(".webplanning_tab2_c_panel>li:not(:first)").hide();
+  //첫번째를 제외한 나머지 내용
+
+  $(".webplanning_tab2_c>li").click(function(){
+    $(".webplanning_tab2_c>li").removeClass("webplanning_tab2_c_selected"); //기존선택된 selected 클래스 삭제
+    $(this).addClass("webplanning_tab2_c_selected"); //새로 선택된 selected 클래스 생성
+    $(".webplanning_tab2_c_panel>li").hide(); //기존의 보여진 내용 숨기기
+    $($(this).find("a").attr("href")).stop(true,true).fadeIn(); //새로 선택된 내용 href 연결된 내용 보여주기
+  });
+
+  
+
+  
+  
 });
 
