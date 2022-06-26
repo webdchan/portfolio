@@ -486,7 +486,7 @@ $(document).ready(function(){
        $(".thumbs li").eq(goldidx).css({"opacity":0.3}); //기존의 썸네일 흐리게
        $(".thumbs li").eq(gidx).css({"opacity":1}); //선택된 썸네일 선명하게
        $(".largeImg li").eq(goldidx).css({"display":"none"}); //기존 이미지 사라짐
-       $(".largeImg li").eq(gidx).stop().css({"display":"block"}); //선택된 이미지 나타남
+       $(".largeImg li").eq(gidx).css({"display":"block"}); //선택된 이미지 나타남
      }
  
      goldidx=gidx; //선택된 이미지는 다시 기존이미지로 저장
@@ -518,6 +518,13 @@ $(document).ready(function(){
      }
      galleryImg(gidx);
    });
+
+   $("#webplanning_tab1_c1_gallery").mouseenter(function(){
+    $(this).css("background-position","0 100%");
+  });
+  $("#webplanning_tab1_c1_gallery").mouseleave(function(){
+    $(this).css("background-position","0 0");
+  });
 
   
 
