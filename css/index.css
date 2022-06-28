@@ -1,14 +1,25 @@
 @import url(common.css);
 @import url(font.css);
 
-@keyframes bg_gradient{
+
+@keyframes bg_color{
+  0%{background-color:black;}
+  20%{background-color:black;}
+  100%{background-color:rgb(255, 255, 255);}
+}
+
+body{
+  animation:bg_color 4s ;
+}
+
+
+/* @keyframes bg_gradient{
 	0%{background-position:0% 50%;}
 	50%{background-position:100% 50%;}
 	100%{background-position:0% 50%;}
 }
 
 body{
-  /* background:linear-gradient(-45deg, #D9AFD9, #97D9E1, #acf7cf, #f5f2a5); */
   background:linear-gradient(-45deg, #e5c5e5, #bbe8ed, #cff9e2, #ffffff);
 	background-size:150% 150%;
   position:fixed;
@@ -17,7 +28,7 @@ body{
 	animation:bg_gradient 8s;
   animation-delay:;
   z-index:-100;
-}
+} */
 
 /* 스크롤바 */
 ::-webkit-scrollbar {width:20px;}
@@ -152,7 +163,7 @@ body{
 }
 
 .intro_info{
-  background-color:rgb(212, 119, 119);
+  background:linear-gradient(-45deg, #17578e, #457ABF);
   display:flex;
   justify-content:center;
   align-items:center;

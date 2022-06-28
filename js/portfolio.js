@@ -509,7 +509,6 @@ $(document).ready(function(){
      gidx1++;
      if(gidx1>8){ // 선택한 이미지가 마지막일때 다시 맨처음부터 다시 시작
        gidx1=0;
- 
      }
      galleryImg(gidx1);
    });
@@ -548,9 +547,159 @@ $(document).ready(function(){
      gidx2++;
      if(gidx2>11){ // 선택한 이미지가 마지막일때 다시 맨처음부터 다시 시작
        gidx2=0;
- 
      }
      galleryImg2(gidx2);
+   });
+
+
+   let goldidx3=0; //기존이미지
+   let gidx3=0; //선택되는 이미지
+ 
+   function galleryImg3(gidx3){ //gidx는 선택되는 이미지
+     if(goldidx3!=gidx3){ //기존의 이미지와 선택된 이미지가 다를때...
+       $("#webplanning_tab4_c1 .thumbs li").eq(goldidx3).css({"opacity":0.3}); //기존의 썸네일 흐리게
+       $("#webplanning_tab4_c1 .thumbs li").eq(gidx3).css({"opacity":1}); //선택된 썸네일 선명하게
+       $("#webplanning_tab4_c1 .largeImg li").eq(goldidx3).css({"display":"none"}); //기존 이미지 사라짐
+       $("#webplanning_tab4_c1 .largeImg li").eq(gidx3).css({"display":"block"}); //선택된 이미지 나타남
+     }
+     goldidx3=gidx3; //선택된 이미지는 다시 기존이미지로 저장
+   }
+ 
+   //썸네일버튼 클릭시.....
+   $("#webplanning_tab4_c1 .thumbs li").click(function(){
+     gidx3=$(this).index();
+     galleryImg3(gidx3);
+   });
+ 
+   //이전버튼 클릭시.....
+   $("#webplanning_tab4_c1 .left_btn").click(function(){
+     gidx3--;
+     if(gidx3<0){//선택한 이미지가 0일때 다시 맨뒤부터 다시 시작
+       gidx3=14;
+     }
+     galleryImg3(gidx3);
+   });
+ 
+   //다음버튼 클식시.....
+   $("#webplanning_tab4_c1 .right_btn").click(function(){
+     gidx3++;
+     if(gidx3>14){ // 선택한 이미지가 마지막일때 다시 맨처음부터 다시 시작
+       gidx3=0;
+     }
+     galleryImg3(gidx3);
+   });
+
+
+   let goldidx4=0; //기존이미지
+   let gidx4=0; //선택되는 이미지
+ 
+   function galleryImg4(gidx4){ //gidx는 선택되는 이미지
+     if(goldidx4!=gidx4){ //기존의 이미지와 선택된 이미지가 다를때...
+       $("#webplanning_tab3_c1 .thumbs li").eq(goldidx4).css({"opacity":0.3}); //기존의 썸네일 흐리게
+       $("#webplanning_tab3_c1 .thumbs li").eq(gidx4).css({"opacity":1}); //선택된 썸네일 선명하게
+       $("#webplanning_tab3_c1 .largeImg li").eq(goldidx4).css({"display":"none"}); //기존 이미지 사라짐
+       $("#webplanning_tab3_c1 .largeImg li").eq(gidx4).css({"display":"block"}); //선택된 이미지 나타남
+     }
+     goldidx4=gidx4; //선택된 이미지는 다시 기존이미지로 저장
+   }
+ 
+   //썸네일버튼 클릭시.....
+   $("#webplanning_tab3_c1 .thumbs li").click(function(){
+     gidx4=$(this).index();
+     galleryImg4(gidx4);
+   });
+ 
+   //이전버튼 클릭시.....
+   $("#webplanning_tab3_c1 .left_btn").click(function(){
+     gidx4--;
+     if(gidx4<0){//선택한 이미지가 0일때 다시 맨뒤부터 다시 시작
+       gidx4=11;
+     }
+     galleryImg4(gidx4);
+   });
+ 
+   //다음버튼 클식시.....
+   $("#webplanning_tab3_c1 .right_btn").click(function(){
+     gidx4++;
+     if(gidx4>11){ // 선택한 이미지가 마지막일때 다시 맨처음부터 다시 시작
+       gidx4=0;
+     }
+     galleryImg4(gidx4);
+   });
+
+   let goldidx5=0; //기존이미지
+   let gidx5=0; //선택되는 이미지
+ 
+   function galleryImg5(gidx5){ //gidx는 선택되는 이미지
+     if(goldidx5!=gidx5){ //기존의 이미지와 선택된 이미지가 다를때...
+       $("#webplanning_tab3_c3 .thumbs li").eq(goldidx5).css({"opacity":0.3}); //기존의 썸네일 흐리게
+       $("#webplanning_tab3_c3 .thumbs li").eq(gidx5).css({"opacity":1}); //선택된 썸네일 선명하게
+       $("#webplanning_tab3_c3 .largeImg li").eq(goldidx5).css({"display":"none"}); //기존 이미지 사라짐
+       $("#webplanning_tab3_c3 .largeImg li").eq(gidx5).css({"display":"block"}); //선택된 이미지 나타남
+     }
+     goldidx5=gidx5; //선택된 이미지는 다시 기존이미지로 저장
+   }
+ 
+   //썸네일버튼 클릭시.....
+   $("#webplanning_tab3_c3 .thumbs li").click(function(){
+     gidx5=$(this).index();
+     galleryImg5(gidx5);
+   });
+ 
+   //이전버튼 클릭시.....
+   $("#webplanning_tab3_c3 .left_btn").click(function(){
+     gidx5--;
+     if(gidx5<0){//선택한 이미지가 0일때 다시 맨뒤부터 다시 시작
+       gidx5=1;
+     }
+     galleryImg5(gidx5);
+   });
+ 
+   //다음버튼 클식시.....
+   $("#webplanning_tab3_c3 .right_btn").click(function(){
+     gidx5++;
+     if(gidx5>1){ // 선택한 이미지가 마지막일때 다시 맨처음부터 다시 시작
+       gidx5=0;
+     }
+     galleryImg5(gidx5);
+   });
+
+
+   let goldidx6=0; //기존이미지
+   let gidx6=0; //선택되는 이미지
+ 
+   function galleryImg6(gidx6){ //gidx는 선택되는 이미지
+     if(goldidx6!=gidx6){ //기존의 이미지와 선택된 이미지가 다를때...
+       $("#webplanning_tab3_c5 .thumbs li").eq(goldidx6).css({"opacity":0.3}); //기존의 썸네일 흐리게
+       $("#webplanning_tab3_c5 .thumbs li").eq(gidx6).css({"opacity":1}); //선택된 썸네일 선명하게
+       $("#webplanning_tab3_c5 .largeImg li").eq(goldidx6).css({"display":"none"}); //기존 이미지 사라짐
+       $("#webplanning_tab3_c5 .largeImg li").eq(gidx6).css({"display":"block"}); //선택된 이미지 나타남
+     }
+     goldidx6=gidx6; //선택된 이미지는 다시 기존이미지로 저장
+   }
+ 
+   //썸네일버튼 클릭시.....
+   $("#webplanning_tab3_c5 .thumbs li").click(function(){
+     gidx6=$(this).index();
+     galleryImg6(gidx6);
+   });
+ 
+   //이전버튼 클릭시.....
+   $("#webplanning_tab3_c5 .left_btn").click(function(){
+     gidx6--;
+     if(gidx6<0){//선택한 이미지가 0일때 다시 맨뒤부터 다시 시작
+       gidx6=11;
+     }
+     galleryImg6(gidx6);
+   });
+ 
+   //다음버튼 클식시.....
+   $("#webplanning_tab3_c5 .right_btn").click(function(){
+     gidx6++;
+     if(gidx6>11){ // 선택한 이미지가 마지막일때 다시 맨처음부터 다시 시작
+       gidx6=0;
+     }
+     galleryImg6(gidx6);
    });
 
   
