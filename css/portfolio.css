@@ -274,7 +274,7 @@ section>div:nth-of-type(1){
 }
 
 section #main_visual{
-  background-color:coral;
+  background-color:black;
 }
 
 /* main title */
@@ -2123,7 +2123,7 @@ section #main6{
 
 .webplanning_tab_panel>li>ul:nth-of-type(2)>li{
   display:flex;
-  margin:50px auto;
+  margin:40px auto;
 }
 
 #main6 .webplanning_content{
@@ -2139,17 +2139,17 @@ section #main6{
   width:100%;
 }
 
-#webplanning_tab1_c1_gallery, #webplanning_tab2_c1_gallery, #webplanning_tab2_c2_gallery, #webplanning_tab2_c3_gallery, #webplanning_tab2_c4_gallery, #webplanning_tab3_c1_gallery, #webplanning_tab3_c2_gallery, #webplanning_tab3_c3_gallery, #webplanning_tab3_c4_gallery, #webplanning_tab3_c5_gallery, #webplanning_tab4_c1_gallery{
+#webplanning_tab1_c1_gallery, #webplanning_tab2_c1_gallery, #webplanning_tab2_c2_gallery, #webplanning_tab2_c3_gallery, #webplanning_tab2_c4_gallery, #webplanning_tab3_c1_gallery, #webplanning_tab3_c2_gallery, #webplanning_tab3_c3_gallery,  #webplanning_tab3_c5_gallery, #webplanning_tab4_c1_gallery{
   position:absolute;
-  top:52px;
-  left:71px;
-  width:634px;
+  top:55px;
+  left:72.5px;
+  width:631px;
   height:411px;
   border-radius:5px;
 }
 
 .largeImg li{
-  width:632px;
+  width:631px;
   height:411px;
 	display:none;
   overflow-y:scroll;
@@ -2243,6 +2243,64 @@ section #main6{
   transform:scale(1.05) translateX(5px);
 }
 
+/* 웹기획 3_4 모바일 페이지 */
+
+#webplanning_tab3_c4 .webplanning_content{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:400px;
+  margin:0 130px 0 160px;
+  transform:scale(0.9);
+  transition:all 0.5s ease-in;
+}
+
+#webplanning_tab3_c4 .webplanning_content img{
+  width:292px;
+  height:550px;
+}
+
+#webplanning_tab3_c4 .webplanning_content:hover{
+  transform:scale(1);
+}
+
+#webplanning_tab3_c4 .webplanning_content .page_visual_display{
+  position:absolute;
+  background-image:url(../images/mobilephone_main.png);
+  background-position:0 0;
+  background-size:auto 100%;
+  background-repeat:no-repeat;
+  transition:background-position 2.5s;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  top:40px;
+  left:71px;
+  width:258.5px;
+  height:496.5px;
+  border-radius:0 0 30px 30px;
+}
+
+#webplanning_tab3_c4 .webplanning_content .page_visual_display span a{
+  margin-bottom:50px;
+  display:block;
+  opacity:0;
+  font-family:SCD3;
+  font-size:13px;
+  letter-spacing:1px;
+  transition:all 1s;
+  color:white;
+  padding:10px 15px;
+  z-index:20;
+  cursor:pointer;
+}
+
+#webplanning_tab3_c4 .webplanning_content .page_visual_display:hover span a{
+  background-color:rgba(172, 55, 39, 0.6);
+  margin-top:120px;
+  opacity:1;
+}
 
 /* main6 webplanning info */
 
@@ -2250,7 +2308,7 @@ section #main6{
   width:500px;
   margin:20px;
   background-color:#fff;
-  padding:60px 30px;
+  padding:40px 30px;
   overflow:hidden;
   border-radius:20px;
   box-shadow:1px 1px 15px rgba(0, 0, 0, 0.3);
@@ -2339,15 +2397,113 @@ section #main6{
   background-color:#2b3b92d8;
 }
 
+#main6 .webplanning_info .page_detail1 span a{
+  display:block;
+  width:220px;
+  height:42px;
+  margin:0 auto;;
+  text-align:center;
+  line-height:40px;
+  font-family:SCD4;
+  font-size:17px;
+  letter-spacing:1px;
+  transition:all 0.5s ease-in-out;
+  border:1px solid #ce412e;
+  color:#ce412e;
+  width:420px; 
+  height:40px;
+  cursor:pointer;
+}
 
+#main6 .webplanning_info .page_detail1 span a:hover{
+  background-color:#ce412e;
+  color:#fff;
+}
 
-/* main5 c3 포트폴리오 시나리오*/
+#main6 .webplanning_info .pdf_button span a{
+  display:block;
+  width:220px;
+  height:42px;
+  margin:0 auto;;
+  text-align:center;
+  line-height:40px;
+  font-family:SCD4;
+  font-size:17px;
+  letter-spacing:1px;
+  transition:all 0.5s ease-in-out;
+  border:1px solid #ce412e;
+  color:#ce412e;
+  width:420px; 
+  height:40px;
+  cursor:pointer;
+}
 
-/* main5 c4 기업체 */
+#main6 .webplanning_info .pdf_button span a:hover{
+  background-color:#ce412e;
+  color:#fff;
+}
 
 /* footer */
 footer{
   height:300px;
   background-color:darkseagreen;
 }
+
+
+/* iframe */
+.webplanning_tab1_c1_pdf, .webplanning_tab2_c1_pdf, .webplanning_tab2_c2_pdf, .webplanning_tab2_c3_pdf, .webplanning_tab2_c4_pdf, .webplanning_tab3_c1_pdf, .webplanning_tab3_c2_pdf, .webplanning_tab3_c3_pdf, .webplanning_tab3_c5_pdf, .webplanning_tab4_c1_pdf{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:5000000;
+}
+
+.webplanning_tab1_c1_pdf_in, .webplanning_tab2_c1_pdf_in, .webplanning_tab2_c2_pdf_in, .webplanning_tab2_c3_pdf_in, .webplanning_tab2_c4_pdf_in, .webplanning_tab3_c1_pdf_in, .webplanning_tab3_c2_pdf_in, .webplanning_tab3_c3_pdf_in, .webplanning_tab3_c5_pdf_in, .webplanning_tab4_c1_pdf_in{
+  width:68%;
+  height:85%;
+  margin:50px auto;
+  z-index:5000000;
+}
+
+/* 메뉴 뒤로 나오는 검정배경 */
+.pdf_back{ 
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+  z-index:-1;
+}
+
+/*버튼영역*/
+.pdf_btn{
+  position:fixed;
+  right:50px;
+  top:30px;
+  margin-left:300px;
+  width:110px;
+  height:140px;
+  color:#fff;
+  text-align:center;
+  overflow:hidden;
+  z-index:10000;
+}
+
+.pdf_btn .pdf_btn_close{ /*닫기버튼*/
+  height:90px;
+  width:110px;
+  cursor:pointer;
+  border-bottom:1px solid #fff;
+}
+
+.pdf_btn .pdf_btn_close i{ /*아이콘폰트*/
+  position:relative;
+  top:15px;
+  font-size:60px;
+}
+
 

@@ -190,7 +190,7 @@ $(document).ready(function(){
     };
 
     /* main2 tabmenu panel 효과 */
-    if(wscroll>=1250){ 
+    if(wscroll>=2000){ 
       $(".webdesign_tab_panel").css({"transform":"translateY(0px)","opacity":"1"});  //밀어놓은 위치 설정취소(none)
     }else{
       $(".webdesign_tab_panel").css({"transform":"translateY(200%)","opacity":"1"});
@@ -311,7 +311,6 @@ $(document).ready(function(){
     $(".w_pop2>li").stop(true,true).hide();
  }); 
 
-
   /* 웹퍼블리싱 */
 
   //화면(오버시 화면 올라가게)_____________
@@ -323,10 +322,10 @@ $(document).ready(function(){
   });
 
   //화면(오버시 옆으로 가게)
-  $("#main5 .mobilephone1 .page_visual_display").mouseenter(function(){
+  $("#main5 .mobilephone1 .page_visual_display, #webplanning_tab3_c4 .webplanning_content .page_visual_display").mouseenter(function(){
     $(this).css("background-position","100% 0");
   });
-  $("#main5 .mobilephone1 .page_visual_display").mouseleave(function(){
+  $("#main5 .mobilephone1 .page_visual_display, #webplanning_tab3_c4 .webplanning_content .page_visual_display").mouseleave(function(){
     $(this).css("background-position","0 0");
   });
 
@@ -429,7 +428,7 @@ $(document).ready(function(){
 
     /* 모바일 목업*/
   //DETAIL 버튼 클릭시 모달창2 띄우기___________
-  $("#main5 .mobilepage .mobile_display .page_visual_display span a, #main5 .page_info .page_info_bottom .page_detail1 a").click(function(){
+  $("#main5 .mobilepage .mobile_display .page_visual_display span a, #main5 .page_info .page_info_bottom .page_detail1 a, #webplanning_tab3_c4 .webplanning_content .page_visual_display span a, #webplanning_tab3_c4 .page_detail1 a").click(function(){
     $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
     $(".mockup_mobile2").fadeIn(); //w_pop index에 해당하는 팝업보이기
   });
@@ -701,6 +700,56 @@ $(document).ready(function(){
      }
      galleryImg6(gidx6);
    });
+
+
+     /* 웹기획 pdf*/
+  //DETAIL 버튼 클릭시 모달창2 띄우기___________
+  $("#webplanning_tab1_c1 .pdf_button a").click(function(){
+    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
+    $(".webplanning_tab1_c1_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+  });
+  $("#webplanning_tab2_c1 .pdf_button a").click(function(){
+    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
+    $(".webplanning_tab2_c1_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+  });
+  $("#webplanning_tab2_c2 .pdf_button a").click(function(){
+    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
+    $(".webplanning_tab2_c2_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+  });
+  $("#webplanning_tab2_c3 .pdf_button a").click(function(){
+    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
+    $(".webplanning_tab2_c3_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+  });
+  $("#webplanning_tab2_c4 .pdf_button a").click(function(){
+    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
+    $(".webplanning_tab2_c4_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+  });
+  $("#webplanning_tab3_c1 .pdf_button a").click(function(){
+    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
+    $(".webplanning_tab3_c1_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+  });
+  $("#webplanning_tab3_c2 .pdf_button a").click(function(){
+    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
+    $(".webplanning_tab3_c2_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+  });
+  $("#webplanning_tab3_c3 .pdf_button a").click(function(){
+    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
+    $(".webplanning_tab3_c3_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+  });
+  $("#webplanning_tab3_c5 .pdf_button a").click(function(){
+    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
+    $(".webplanning_tab3_c5_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+  });
+  $("#webplanning_tab4_c1 .pdf_button a").click(function(){
+    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
+    $(".webplanning_tab4_c1_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+  });
+
+  // 모바일 닫기
+  $(".pdf_btn, .pdf_back").click(function(){
+    $("html").css({overflowY:"scroll"});
+    $(".webplanning_tab1_c1_pdf, .webplanning_tab2_c1_pdf, .webplanning_tab2_c2_pdf, .webplanning_tab2_c3_pdf, .webplanning_tab2_c4_pdf, .webplanning_tab3_c1_pdf, .webplanning_tab3_c2_pdf, .webplanning_tab3_c3_pdf, .webplanning_tab3_c5_pdf, .webplanning_tab4_c1_pdf").stop(true,true).fadeOut();
+  });
 
   
 
