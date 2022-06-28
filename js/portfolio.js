@@ -341,7 +341,7 @@ $(document).ready(function(){
     $(".responsive_mobile, .responsive_tablet").stop(true,true).css({"opacity":"1"},"easeOutCirc");
   });
   $("#main4 .responsive_mobile, #main4 .page_info .page_detail2 span:nth-of-type(1) a").mouseenter(function(){
-    $(".responsive_mobile").stop(true,true).css({"transform":"scale(1.45)"},"easeOutCirc");
+    $(".responsive_mobile").stop(true,true).css({"transform":"scale(1.35)"},"easeOutCirc");
     $(".responsive_pc, .responsive_tablet").stop(true,true).css({"opacity":"0.3"},"easeOutCirc");
   });
   $("#main4 .responsive_mobile, #main4 .page_info .page_detail2 span:nth-of-type(1) a").mouseleave(function(){
