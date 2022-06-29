@@ -665,7 +665,7 @@ section #main1{
 
 .skills_etc span{
   position:absolute;
-  background-color:#9b5e67
+  background-color:#9b5e67;
 }
 
 .skills_etc span:nth-of-type(1){top:18px; left:-2px; width:2px; height:10px;}
@@ -676,7 +676,7 @@ section #main1{
 
 /* 웹디자인 */
 section #main2{
-  background-color:rgba(106, 140, 105, 0.855);
+  background-color:rgba(106, 140, 105, 0.7);
 }
 
 #main2 .main2_workbar{
@@ -702,9 +702,6 @@ section #main2{
 #webdesign_tabmenu{
   width:1350px;
   margin:20px auto 0;
-  transform:translateY(200%);
-  opacity:0;
-  transition:all 1.2s ease;
 }
 
 #webdesign_tabmenu .webdesign_tab{
@@ -741,12 +738,19 @@ section #main2{
 }
 
 /* main2 tabmenu panel*/
-
+.webdesign_tab_panel{
+  width:1000px;
+  margin:0 auto;
+  transform:translateY(200%);
+  opacity:0;
+  transition:all 1.2s ease;
+}
 /* webdsign_tab1_graphic */
 .webdsign_tab1_graphic{
-  width:75%;
+  width:100%;
   height:550px;
-  margin:20px auto;
+  margin:35px auto;
+  padding-left:10px;
 }
 
 .webdsign_tab1_graphic>ul{
@@ -894,10 +898,10 @@ section #main2{
 
 /* webdsign_tab2_uiux */
 .webdsign_tab2_uiux{
-  width:75%;
+  width:100%;
   height:550px;
-  margin:0 auto;
-  margin:20px auto;
+  margin:35px auto;
+  padding-left:10px;
 }
 
 .webdsign_tab2_uiux>ul{

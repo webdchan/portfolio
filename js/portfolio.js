@@ -202,9 +202,9 @@ $(document).ready(function(){
 
     /* main2 tabmenu panel 효과 */
     if(wscroll>=2000){ 
-      $("#webdesign_tabmenu").css({"transform":"translateY(0px)","opacity":"1"});  //밀어놓은 위치 설정취소(none)
+      $(".webdesign_tab_panel").css({"transform":"translateY(0px)","opacity":"1"});  //밀어놓은 위치 설정취소(none)
     }else{
-      $("#webdesign_tabmenu").css({"transform":"translateY(200%)","opacity":"1"});
+      $(".webdesign_tab_panel").css({"transform":"translateY(200%)","opacity":"1"});
     };
 
     // main5 모바일 컨텐츠 효과
@@ -229,11 +229,11 @@ $(document).ready(function(){
   });
 
   $(".webdesign_tab>li:nth-of-type(1)").click(function(){
-    $("#main2").stop(true,true).animate({backgroundColor:"rgba(106, 140, 105, 0.855)"},"easeOutCirc");
+    $("#main2").stop(true,true).animate({backgroundColor:"rgba(106, 140, 105, 0.7)"},"easeOutCirc");
   });
 
   $(".webdesign_tab>li:nth-of-type(2)").click(function(){
-    $("#main2").stop(true,true).animate({backgroundColor:"rgba(191, 103, 95, 0.8)"},"easeOutCirc");
+    $("#main2").stop(true,true).animate({backgroundColor:"rgba(191, 103, 95, 0.6)"},"easeOutCirc");
   });
 
   
