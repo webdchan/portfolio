@@ -2475,7 +2475,7 @@ section #main6{
 footer{
   opacity:0;
   transform:translateX(200%);
-  height:400px;
+  height:200px;
   background-color:#4a58d4a6;
   transition:all 3s;
 }

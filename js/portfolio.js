@@ -173,9 +173,9 @@ $(document).ready(function(){
       $("#main6 .main_title h2").css({"transform":"translateY(-300%)","opacity":"0"});
     };
     if(wscroll>=8000){ 
-      $("footer").css({"transform":"translateX(0)","opacity":"1"});
+      $("footer").css({"transform":"translateX(0)","opacity":"1", "height":"400px"});
     }else{
-      $("footer").css({"transform":"translateX(200%)","opacity":"0"});
+      $("footer").css({"transform":"translateX(200%)","opacity":"0", "height":"200px"});
     };
 
     if(wscroll>=7400){ 
