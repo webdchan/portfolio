@@ -1,5 +1,6 @@
 @import url(common.css);
 @import url(font.css);
+@import url(mainvisual.css);
 @import url(mobile_mockup.css);
 @import url(tablet_mockup.css);
 @import url(mobile_mockup2.css);
@@ -1013,8 +1014,8 @@ section #main2{
   top:200px;
   left:0;
   background-color:rgba(0,0,0,0.5);
-  width:420px;
-  height:370px;
+  width:440px;
+  height:390px;
   border-radius:10px;
   z-index:1;
   opacity:0;
@@ -1615,7 +1616,7 @@ section #main4{
 
 #main4 .page_info .page_detail1 span a{width:420px; height:40px;}
 #main4 .page_info .page_detail1 span a:hover{background-color:#a3800ec2; color:#fff;}
-#main4 .page_info .page_detail2 span:nth-of-type(1) a:hover{background-color:#627219c5; color:#fff; border:1px solid #627219c5; }
+#main4 .page_info .page_detail2 span:nth-of-type(1) a:hover{background-color:#627219c5; color:#fff; border:1px solid #627219c5;}
 #main4 .page_info .page_detail2 span:nth-of-type(2) a:hover{background-color:#323050ce; color:#fff; border:1px solid #323050ce;}
 
 #main4 .page_visual_display{
@@ -1671,9 +1672,9 @@ section #main4{
 
 #main4 .page_visual_display:hover span a{margin-top:120px;opacity:1;}
 
-.responsive_visual .responsive_pc .page_visual_display:hover span a{background-color:#3f5ab480;}
-.responsive_visual .responsive_mobile .page_visual_display:hover span a{background-color:#e0ca4bbd;}
-.responsive_visual .responsive_tablet .page_visual_display:hover span a{background-color:#d878d3;}
+.responsive_visual .responsive_pc .page_visual_display:hover span a{background-color:#a3800ec2}
+.responsive_visual .responsive_mobile .page_visual_display:hover span a{background-color:#627219c5;}
+.responsive_visual .responsive_tablet .page_visual_display:hover span a{background-color:#323050ce;}
 
 
 /* 모바일페이지 */
@@ -1993,7 +1994,7 @@ section #main5{
 /* 웹기획 */
 
 section #main6{
-  background-color:rgba(255, 255, 255, 0.1);
+  background-color:rgba(255, 255, 255, 0.5);
   height:1000px;
 }
 
@@ -2044,10 +2045,10 @@ section #main6{
 
 .webplanning_tab_title>h4{
   text-align:end;
-  padding:0 60px 15px 0;
-  font-family:SCD4;
+  padding:0 50px 15px 0;
+  font-family:SCD3;
   font-size:30px;
-  letter-spacing:2px;
+  letter-spacing:3px;
 }
 
 /* main6 tabmenu panel  */
@@ -2129,7 +2130,7 @@ section #main6{
   position:relative;
   display:flex;
   justify-content:center;
-  align-items: center;
+  align-items:center;
   width:800px;
   margin-right:40px;
 }
