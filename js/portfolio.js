@@ -1,3 +1,7 @@
+setTimeout(function(){
+  alert('이 사이트는 크롬 브라우저에 최적화 되어 있습니다.\n(This site is optimized for Chrome. Please make sure your browser is Chrome.)');
+},3500);
+
 $(document).ready(function(){
 
   /* 스크롤 위치 표시 */
@@ -167,6 +171,11 @@ $(document).ready(function(){
       $(".bottom_progress_in").css({"width":"90%"});
     }else{
       $("#main6 .main_title h2").css({"transform":"translateY(-300%)","opacity":"0"});
+    };
+    if(wscroll>=8000){ 
+      $("footer").css({"transform":"translateX(0)","opacity":"1"});
+    }else{
+      $("footer").css({"transform":"translateX(200%)","opacity":"0"});
     };
 
     if(wscroll>=7400){ 
