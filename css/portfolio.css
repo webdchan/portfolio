@@ -148,7 +148,7 @@ header .header_top_right .header_workbar{
 
 /* top_nav */
 header .top_nav{
-  background-color:rgba(255,255,255,0.6);
+  background-color:rgba(255,255,255,0.4);
   top:115px;
   width:100%;
   margin:0 auto;
