@@ -8,7 +8,6 @@
 body{
   background-image:url(../images/body_bg2.png);
   background-size:cover;
-  /* background-color:rgb(235, 235, 235); */
   color:#444;
 }
 
@@ -53,7 +52,6 @@ body{
 }
 
 /* header */
-
 header .header_top{
   width:1400px;
   margin:0 auto;
@@ -76,9 +74,7 @@ header .header_top_left_in{
   width:250px;
 }
 
-header .header_top_left_in .max1200px{
-  display:none;
-}
+header .header_top_left_in .max1200px{display:none;}
 
 header .header_top_left_in .min1200px>p{
   color:#777;
@@ -150,10 +146,9 @@ header .header_top_right .header_workbar{
   font-size:13.5px;
 }
 
-
 /* top_nav */
 header .top_nav{
-  background-color:white;
+  background-color:rgba(255,255,255,0.6);
   top:115px;
   width:100%;
   margin:0 auto;
@@ -2654,13 +2649,17 @@ footer .footer_right_in span:nth-of-type(4){bottom:0px; right:0px; width:10px; h
 
 
 
-/* ________________ Mobile */
+/* ________________ 1200px 이하 해상도일 경우 */
 @media screen and (max-width:1200px){
 
   header .top_nav, header .header_top_left_in .min1200px, aside, section, footer, .bottom_progress{display:none;}
   header .header_top_left_in .max1200px{display:block;}
 
   header .header_top{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
     width:600px;
     height:100%;
     padding:0;
@@ -2676,6 +2675,7 @@ footer .footer_right_in span:nth-of-type(4){bottom:0px; right:0px; width:10px; h
   header .header_top_left_in{
     position:relative;
     width:570px;
+    height:300px;
     padding:30px 0;
     margin:0 auto;
   }
@@ -2710,7 +2710,8 @@ footer .footer_right_in span:nth-of-type(4){bottom:0px; right:0px; width:10px; h
   }
   
   header .header_top .svg{
-    margin:50px auto;
+    top:80px;
+    position:fixed;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -2746,5 +2747,4 @@ footer .footer_right_in span:nth-of-type(4){bottom:0px; right:0px; width:10px; h
     font-size:13.5px;
   }
   
-
 }
