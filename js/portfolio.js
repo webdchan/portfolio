@@ -1,6 +1,6 @@
 setTimeout(function(){
-  alert('이 사이트는 크롬 브라우저에 최적화 되어 있습니다.\n(This site is optimized for Chrome. Please make sure your browser is Chrome.)');
-},3500);
+  alert('이 사이트는 크롬 브라우저에 최적화 되어 있습니다.\n(This site is optimized for Chrome. Please make sure your browser is Chrome.)\n');
+},3400);
 
 $(document).ready(function(){
 
@@ -9,30 +9,16 @@ $(document).ready(function(){
     $("#txt1").text($(this).scrollTop());
   });
 
-  /* ===== 현재 날짜 ===== */
-	// Date() 클래스의 인스턴스생성
 	var objDate = new Date();
-	
-	// 년 구하기
 	var year = objDate.getFullYear();
-
-	// 월 구하기
-	var month = objDate.getMonth(); // 0(1월)부터 11(12월)까지의 정수값
-
-	// 일 구하기
-	var date = objDate.getDate(); // 날짜(일)를 나타내는 1에서 31까지의 정수
-
-	// 요일 구하기
-	var day = objDate.getDay(); // 0(일)부터 6(토)까지의 정수값
-	var aryDay = ["일","월","화","수","목","금","토"]; // 배열을 이용해서 1개 이상의 데이터를 저장
-
-	// 년, 월, 일, 요일 출력
+	var month = objDate.getMonth();
+	var date = objDate.getDate();
+	var day = objDate.getDay(); 
+	var aryDay = ["일","월","화","수","목","금","토"]; 
 	var fulldate = year + "." + (month+1) + "." + date + ".(" + aryDay[day] + ")";
 
-	// 현재날짜
 	$(".header_date").text(fulldate);
 
-  /* 메인 메뉴 클릭 시 슬라이드 효과 */
   var $root = $('html, body');
 
   $('.top_nav>ul>li>a').click(function() {
@@ -52,17 +38,17 @@ $(document).ready(function(){
         $(".sd_design").removeClass("sd_active");
         $(".top_button").stop(true,true).css({display:"block"});
       
-        if($(this).scrollTop()>700){
+        if($(this).scrollTop()>1000){
       
-          if($(this).scrollTop()>1700){
+          if($(this).scrollTop()>2150){
 
-              if($(this).scrollTop()>2600){
+              if($(this).scrollTop()>3300){
           
-                if($(this).scrollTop()>4850){
+                if($(this).scrollTop()>5700){
 
-                  if($(this).scrollTop()>5800){
+                  if($(this).scrollTop()>6850){
 
-                    if($(this).scrollTop()>6750){
+                    if($(this).scrollTop()>8000){
                       $(".sd_design").removeClass("sd_active");
                       $(".sd_d6").toggleClass("sd_active");
                     }else{
@@ -99,22 +85,22 @@ $(document).ready(function(){
 
     /* nav 클릭 시 스크롤 */ 
     $(".sd_d1").click(function(){
-      $("html,body").stop(true,true).animate({scrollTop:"950"},"easeOutCirc");
+      $("html,body").stop(true,true).animate({scrollTop:"1010"},"easeOutCirc");
     });
     $(".sd_d2").click(function(){
-      $("html,body").stop(true,true).animate({scrollTop:"1900"},"easeOutCirc");
+      $("html,body").stop(true,true).animate({scrollTop:"2160"},"easeOutCirc");
     });
     $(".sd_d3").click(function(){
-      $("html,body").stop(true,true).animate({scrollTop:"2800"},"easeOutCirc");
+      $("html,body").stop(true,true).animate({scrollTop:"3310"},"easeOutCirc");
     });
     $(".sd_d4").click(function(){
-      $("html,body").stop(true,true).animate({scrollTop:"5050"},"easeOutCirc");
+      $("html,body").stop(true,true).animate({scrollTop:"5710"},"easeOutCirc");
     });
     $(".sd_d5").click(function(){
-      $("html,body").stop(true,true).animate({scrollTop:"6050"},"easeOutCirc");
+      $("html,body").stop(true,true).animate({scrollTop:"6860"},"easeOutCirc");
     });
     $(".sd_d6").click(function(){
-      $("html,body").stop(true,true).animate({scrollTop:"7000"},"easeOutCirc");
+      $("html,body").stop(true,true).animate({scrollTop:"8010"},"easeOutCirc");
     });
 
     /* topbutton 스크롤 */
@@ -123,92 +109,93 @@ $(document).ready(function(){
     });
 
 
-    /* 프로필 스크롤 */
+    /* 제목 스크롤 */
 
   $(window).scroll(function(){
 
     let wscroll= $(this).scrollTop();
 
-    /* 제목 스크롤 */
-    if(wscroll>=700){ 
-      $("#main1 .main_title h2").css({"transform":"translateY(0px) scale(1.1)","opacity":"1"});  //밀어놓은 위치 설정취소(none)
+    if(wscroll>=1000){ 
+      $("#main1 .main_title h2").css({"transform":"translateY(0px) scale(1.1)","opacity":"1"});
       $(".bottom_progress_in").css({"width":"15%"});
     }else{
       $("#main1 .main_title h2").css({"transform":"translateY(300%)","opacity":"0"});
       $(".bottom_progress_in").css({"width":"0%"});
     };
 
-    if(wscroll>=1700){ 
-      $("#main2 .main_title h2").css({"transform":"translateY(0px) scale(1.1)","opacity":"1"});  //밀어놓은 위치 설정취소(none)
+    if(wscroll>=2150){ 
+      $("#main2 .main_title h2").css({"transform":"translateY(0px) scale(1.1)","opacity":"1"}); 
       $(".bottom_progress_in").css({"width":"30%"});
     }else{
       $("#main2 .main_title h2").css({"transform":"translateY(-300%)","opacity":"0"});
     };
 
-    if(wscroll>=2600){ 
-      $("#main3 .main_title h2").css({"transform":"translateX(0px) scale(1.1)","opacity":"1"});  //밀어놓은 위치 설정취소(none)
+    if(wscroll>=3300){ 
+      $("#main3 .main_title h2").css({"transform":"translateX(0px) scale(1.1)","opacity":"1"}); 
       $(".bottom_progress_in").css({"width":"45%"});
     }else{
       $("#main3 .main_title h2").css({"transform":"translateX(150%)","opacity":"0"});
     };
 
-    if(wscroll>=4850){ 
-      $("#main4 .main_title h2").css({"transform":"translateX(0px) scale(1.1)","opacity":"1"});  //밀어놓은 위치 설정취소(none)
+    if(wscroll>=5700){ 
+      $("#main4 .main_title h2").css({"transform":"translateX(0px) scale(1.1)","opacity":"1"});  
       $(".bottom_progress_in").css({"width":"60%"});
     }else{
       $("#main4 .main_title h2").css({"transform":"translateX(-150%)","opacity":"0"});
     };
 
-    if(wscroll>=5800){ 
-      $("#main5 .main_title").css({"transform":"translateY(0px) scale(1.1)","opacity":"1"});  //밀어놓은 위치 설정취소(none)
+    if(wscroll>=6850){ 
+      $("#main5 .main_title").css({"transform":"translateY(0px) scale(1.1)","opacity":"1"}); 
       $(".bottom_progress_in").css({"width":"75%"});
     }else{
       $("#main5 .main_title").css({"transform":"translateY(300%)","opacity":"0"});
     };
 
-    if(wscroll>=6750){ 
-      $("#main6 .main_title h2").css({"transform":"translateY(0px) scale(1.1)","opacity":"1"});  //밀어놓은 위치 설정취소(none)
+    if(wscroll>=8000){ 
+      $("#main6 .main_title h2").css({"transform":"translateY(0px) scale(1.1)","opacity":"1"}); 
       $(".bottom_progress_in").css({"width":"90%"});
     }else{
       $("#main6 .main_title h2").css({"transform":"translateY(-300%)","opacity":"0"});
     };
-    if(wscroll>=8000){ 
-      $("footer").css({"transform":"translateX(0)","opacity":"1", "height":"400px"});
-    }else{
-      $("footer").css({"transform":"translateX(200%)","opacity":"0", "height":"200px"});
-    };
 
-    if(wscroll>=7400){ 
+    if(wscroll>=8500){ 
       $(".bottom_progress_in").css({"width":"110%"});
     }else{
 
     };
 
-    /*프로필(scrolls1),교육이수영역(scrolls2)*/ 
-
-    if(wscroll>=500){ 
-        $(".profile_top").css({"transform":"translateX(0px)","opacity":"1"});  //밀어놓은 위치 설정취소(none)
+    /*스크롤 시 컨텐츠 나타나는 효과*/ 
+    /* main1 */
+    if(wscroll>=1000){ 
+        $("#main1 .profile_top").css({"transform":"translateX(0px)","opacity":"1"}); 
     }else{
-        $(".profile_top").css({"transform":"translateX(100%)","opacity":"0"});
+        $("#main1 .profile_top").css({"transform":"translateX(100%)","opacity":"0"});
     };
 
-    if(wscroll>=700){ 
-      $(".profile_bottom").css({"transform":"translateX(0px)","opacity":"1"});
-      $(".skills_svg svg:nth-child(2) path").css({"display":"block"});
+    if(wscroll>=1200){ 
+      $("#main1 .profile_bottom").css({"transform":"translateX(0px)","opacity":"1"});
+      $("#main1 .skills_svg svg:nth-child(2) path").css({"display":"block"});
     }else{
-      $(".profile_bottom").css({"transform":"translateX(-100%)","opacity":"0"});
-      $(".skills_svg svg:nth-child(2) path").css({"display":"none"});
+      $("#main1 .profile_bottom").css({"transform":"translateX(-100%)","opacity":"0"});
+      $("#main1 .skills_svg svg:nth-child(2) path").css({"display":"none"});
     };
 
-    /* main2 tabmenu panel 효과 */
-    if(wscroll>=2000){ 
-      $(".webdesign_tab_panel").css({"transform":"translateY(0px)","opacity":"1"});  //밀어놓은 위치 설정취소(none)
+     /* main2 */
+    if(wscroll>=2150){ 
+      $("#main2 .webdesign_tab_panel").css({"transform":"translateY(0px)","opacity":"1"});  
     }else{
-      $(".webdesign_tab_panel").css({"transform":"translateY(200%)","opacity":"1"});
+      $("#main2 .webdesign_tab_panel").css({"transform":"translateY(200%)","opacity":"0"});
     };
 
-    // main5 모바일 컨텐츠 효과
-    if(wscroll>=5900){ 
+    /* main4 */
+    if(wscroll>=5700){ 
+      $("#main4 .responsivepage").css({"opacity":"1"});  
+    }else{
+      $("#main4 .responsivepage").css({"opacity":"0"});
+    };
+
+     /* main5 */
+    if(wscroll>=6850){ 
       $("#main5 .mobilepage, #main5 .page_info").css({"transform":"scale(1)","opacity":"1"});
     }else{
       $("#main5 .mobilepage, #main5 .page_info").css({"transform":"scale(0)","opacity":"0"});  
@@ -219,13 +206,12 @@ $(document).ready(function(){
   /* 웹디자인 탭메뉴 */
  
   $(".webdesign_tab_panel>li:not(:first)").hide();
-  //첫번째를 제외한 나머지 내용
 
   $(".webdesign_tab>li").click(function(){
-    $(".webdesign_tab>li").removeClass("webdesign_tab_selected"); //기존선택된 selected 클래스 삭제
-    $(this).addClass("webdesign_tab_selected"); //새로 선택된 selected 클래스 생성
-    $(".webdesign_tab_panel>li").hide(); //기존의 보여진 내용 숨기기
-    $($(this).find("a").attr("href")).stop(true,true).fadeIn(); //새로 선택된 내용 href 연결된 내용 보여주기
+    $(".webdesign_tab>li").removeClass("webdesign_tab_selected"); 
+    $(this).addClass("webdesign_tab_selected"); 
+    $(".webdesign_tab_panel>li").hide(); 
+    $($(this).find("a").attr("href")).stop(true,true).fadeIn(); 
   });
 
   $(".webdesign_tab>li:nth-of-type(1)").click(function(){
@@ -236,7 +222,6 @@ $(document).ready(function(){
     $("#main2").stop(true,true).animate({backgroundColor:"rgba(191, 103, 95, 0.6)"},"easeOutCirc");
   });
 
-  
 
   //DETAIL 버튼 클릭시 모달창1 띄우기___________
   $(".webdsign_tab1_graphic>ul>li").click(function(){
