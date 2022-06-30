@@ -1,5 +1,5 @@
 setTimeout(function(){
-  alert('이 사이트는 크롬 브라우저에 최적화 되어 있습니다.\n(This site is optimized for Chrome. Please make sure your browser is Chrome.)\n');
+  alert('이 사이트는 크롬브라우저(1920x1000 해상도)에 최적화되어 있습니다.\n(This site is optimized for Chrome browser and 1920x1000 resolution.)');
 },3400);
 
 $(document).ready(function(){
@@ -38,17 +38,17 @@ $(document).ready(function(){
         $(".sd_design").removeClass("sd_active");
         $(".top_button").stop(true,true).css({display:"block"});
       
-        if($(this).scrollTop()>1000){
+        if($(this).scrollTop()>950){
       
-          if($(this).scrollTop()>2150){
+          if($(this).scrollTop()>2100){
 
-              if($(this).scrollTop()>3300){
+              if($(this).scrollTop()>3250){
           
-                if($(this).scrollTop()>5700){
+                if($(this).scrollTop()>5650){
 
-                  if($(this).scrollTop()>6850){
+                  if($(this).scrollTop()>6800){
 
-                    if($(this).scrollTop()>8000){
+                    if($(this).scrollTop()>7950){
                       $(".sd_design").removeClass("sd_active");
                       $(".sd_d6").toggleClass("sd_active");
                     }else{
@@ -85,22 +85,22 @@ $(document).ready(function(){
 
     /* nav 클릭 시 스크롤 */ 
     $(".sd_d1").click(function(){
-      $("html,body").stop(true,true).animate({scrollTop:"1010"},"easeOutCirc");
+      $("html,body").stop(true,true).animate({scrollTop:"960"},"easeOutCirc");
     });
     $(".sd_d2").click(function(){
-      $("html,body").stop(true,true).animate({scrollTop:"2160"},"easeOutCirc");
+      $("html,body").stop(true,true).animate({scrollTop:"2110"},"easeOutCirc");
     });
     $(".sd_d3").click(function(){
-      $("html,body").stop(true,true).animate({scrollTop:"3310"},"easeOutCirc");
+      $("html,body").stop(true,true).animate({scrollTop:"3260"},"easeOutCirc");
     });
     $(".sd_d4").click(function(){
-      $("html,body").stop(true,true).animate({scrollTop:"5710"},"easeOutCirc");
+      $("html,body").stop(true,true).animate({scrollTop:"5560"},"easeOutCirc");
     });
     $(".sd_d5").click(function(){
-      $("html,body").stop(true,true).animate({scrollTop:"6860"},"easeOutCirc");
+      $("html,body").stop(true,true).animate({scrollTop:"6810"},"easeOutCirc");
     });
     $(".sd_d6").click(function(){
-      $("html,body").stop(true,true).animate({scrollTop:"8010"},"easeOutCirc");
+      $("html,body").stop(true,true).animate({scrollTop:"7960"},"easeOutCirc");
     });
 
     /* topbutton 스크롤 */
@@ -115,7 +115,7 @@ $(document).ready(function(){
 
     let wscroll= $(this).scrollTop();
 
-    if(wscroll>=1000){ 
+    if(wscroll>=950){ 
       $("#main1 .main_title h2").css({"transform":"translateY(0px) scale(1.1)","opacity":"1"});
       $(".bottom_progress_in").css({"width":"15%"});
     }else{
@@ -123,45 +123,44 @@ $(document).ready(function(){
       $(".bottom_progress_in").css({"width":"0%"});
     };
 
-    if(wscroll>=2150){ 
+    if(wscroll>=2100){ 
       $("#main2 .main_title h2").css({"transform":"translateY(0px) scale(1.1)","opacity":"1"}); 
       $(".bottom_progress_in").css({"width":"30%"});
     }else{
       $("#main2 .main_title h2").css({"transform":"translateY(-300%)","opacity":"0"});
     };
 
-    if(wscroll>=3300){ 
+    if(wscroll>=3250){ 
       $("#main3 .main_title h2").css({"transform":"translateX(0px) scale(1.1)","opacity":"1"}); 
       $(".bottom_progress_in").css({"width":"45%"});
     }else{
       $("#main3 .main_title h2").css({"transform":"translateX(150%)","opacity":"0"});
     };
 
-    if(wscroll>=5700){ 
+    if(wscroll>=5650){ 
       $("#main4 .main_title h2").css({"transform":"translateX(0px) scale(1.1)","opacity":"1"});  
       $(".bottom_progress_in").css({"width":"60%"});
     }else{
       $("#main4 .main_title h2").css({"transform":"translateX(-150%)","opacity":"0"});
     };
 
-    if(wscroll>=6850){ 
+    if(wscroll>=6800){ 
       $("#main5 .main_title").css({"transform":"translateY(0px) scale(1.1)","opacity":"1"}); 
       $(".bottom_progress_in").css({"width":"75%"});
     }else{
       $("#main5 .main_title").css({"transform":"translateY(300%)","opacity":"0"});
     };
 
-    if(wscroll>=8000){ 
+    if(wscroll>=7950){ 
       $("#main6 .main_title h2").css({"transform":"translateY(0px) scale(1.1)","opacity":"1"}); 
       $(".bottom_progress_in").css({"width":"90%"});
     }else{
       $("#main6 .main_title h2").css({"transform":"translateY(-300%)","opacity":"0"});
     };
 
-    if(wscroll>=8500){ 
+    if(wscroll>=8450){ 
       $(".bottom_progress_in").css({"width":"110%"});
     }else{
-
     };
 
     /*스크롤 시 컨텐츠 나타나는 효과*/ 

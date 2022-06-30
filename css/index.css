@@ -163,7 +163,7 @@ body{
 }
 
 .intro_info{
-  background:linear-gradient(-45deg, #17578e, #457ABF);
+  background:linear-gradient(-45deg, #4a58d4ef, #4a58d4a1);
   display:flex;
   justify-content:center;
   align-items:center;
