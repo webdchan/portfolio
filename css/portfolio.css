@@ -2657,9 +2657,8 @@ footer .footer_right_in span:nth-of-type(4){bottom:0px; right:0px; width:10px; h
 
   header .header_top{
     position:fixed;
-    top:50%;
     left:50%;
-    transform:translate(-50%,-50%);
+    transform:translateX(-50%);
     width:600px;
     height:100%;
     padding:0;
@@ -2674,24 +2673,26 @@ footer .footer_right_in span:nth-of-type(4){bottom:0px; right:0px; width:10px; h
   
   header .header_top_left_in{
     position:relative;
-    width:570px;
-    height:300px;
-    padding:30px 0;
+    width:550px;
+    height:250px;
+    padding:5px;
     margin:0 auto;
   }
   
   header .header_top_left_in .max1200px>p{
     color:#777;
-    line-height:45px;
+    line-height:35px;
     text-align:center;
     font-family:SCD4;
-    font-size:1rem;
+    font-size:0.9rem;
     letter-spacing:0.7px;
   }
 
-  header .header_top_left_in .max1200px>p:nth-of-type(1),   header .header_top_left_in .max1200px>p:nth-of-type(2){font-size:1.15rem;}
-  header .header_top_left_in .max1200px>p:nth-of-type(4){font-size:0.9rem;}
-  header .header_top_left_in .max1200px>p b{color:#4a58d4a1;}
+  header .header_top_left_in .max1200px>p:nth-of-type(1),   header .header_top_left_in .max1200px>p:nth-of-type(2){font-size:1rem;}
+  header .header_top_left_in .max1200px>p:nth-of-type(4){font-size:0.8rem;}
+  header .header_top_left_in .max1200px>p b{
+    font-family:SCD4;
+    color:#4a58d4a1;}
 
   header .header_top_left_in span{
     position:absolute;
