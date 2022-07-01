@@ -1944,7 +1944,7 @@ section #main5{
   margin:0 auto;
   background-image:url(../images/main5_info_bg.png);
   background-color:#fff;
-  padding:30px 30px 25px;
+  padding:30px 10px 25px 40px;
   overflow:hidden;
   border-radius:20px;
   box-shadow:1px 1px 15px rgba(0, 0, 0, 0.3);
@@ -1970,7 +1970,7 @@ section #main5{
 
 #main5 .page_info_top p>span:nth-of-type(2):after{
   position:absolute;
-  left:90px;
+  left:95px;
   bottom:1px;
   content:'';
   width:2px;
@@ -2024,9 +2024,7 @@ section #main5{
   color:#fff;
 }
 
-
 /* 웹기획 */
-
 section #main6{
   background-color:rgba(255, 255, 255, 0.5);
   height:1000px;
