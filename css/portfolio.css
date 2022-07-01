@@ -44,13 +44,6 @@ body{
   z-index:1500;
 }
 
-#txt1{
-  position:fixed;
-  top:0;
-  right:0;
-  z-index:100;
-}
-
 /* header */
 header .header_top{
   width:1400px;
@@ -111,7 +104,7 @@ header .header_top .svg{
   align-items:center;
   height:115px;
   animation:svg_animation 4s;
-  z-index:100;
+  z-index:1600;
 }
 
 header .header_top .svg img{
@@ -315,9 +308,13 @@ section>div{
   box-shadow:5px 5px 25px rgba(0,0,0,0.35);
 }
 
-section>div:nth-of-type(1){
+section>div#main_visual{
+  background:radial-gradient(ellipse at bottom, #1b2a3a 0%, #090a0f 100%);
   width:100%;
-  margin:0 auto;
+  height:850px;
+  overflow:hidden;
+  position:relative;
+  margin-top:0;
 }
 
 /* main title */
