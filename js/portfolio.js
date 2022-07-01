@@ -31,12 +31,12 @@ $(document).ready(function(){
     /* ----- 탑버튼 및사이드 사각도형 스크롤 시 색상 변경  */
     $(window).scroll(function(){
       $(".sd_design").stop(true,true).css({display:"none"});
-      $(".top_button").stop(true,true).css({display:"none"});
+      $(".top_button").css({display:"none"});
 
       if($(this).scrollTop()>250){
         $(".sd_design").stop(true,true).css({display:"block", transition:"all 0.3s easy-in"});
         $(".sd_design").removeClass("sd_active");
-        $(".top_button").stop(true,true).css({display:"block"});
+        $(".top_button").css({display:"block"});
       
         if($(this).scrollTop()>950){
       

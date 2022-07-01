@@ -298,7 +298,7 @@ header .top_nav ul li a:hover span:nth-of-type(2){color:rgb(231, 231, 231);}
   background-size:cover;
   width:80px;
   height:80px;
-  transition:all 0.3s ease-in-out;
+  transition:all 0.3s;
 }
 
 .top_button:hover{
