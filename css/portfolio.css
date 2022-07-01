@@ -2079,10 +2079,11 @@ section #main6{
 
 .webplanning_tab_title>h4{
   text-align:end;
-  padding:0 50px 15px 0;
-  font-family:SCD3;
-  font-size:30px;
-  letter-spacing:3px;
+  padding:0 50px 18px 0;
+  font-family:'Nanum Pen Script', cursive;
+  font-weight:400;
+  font-size:50px;
+  letter-spacing:2px;
 }
 
 /* main6 tabmenu panel  */
