@@ -387,18 +387,19 @@
   top:28%;
   left:50%;
   transform:translate(-50%, -50%);
-  height:300px;
+  height:280px;
   font-family:SCD6;
   letter-spacing:2px;
   font-size:55px;
-  line-height:69px;
+  line-height:70px;
   color:#ecf0f1;
+  z-index:100;
 }
 
 .mainvisual_info__container{
   margin:0 50px;
   overflow:hidden;
-  height:69px;
+  height:70px;
   padding:0 45px 0 60px;
 }
 
@@ -406,7 +407,7 @@
   content: '';
   background-size:cover;
   width:70px;
-  height:69px;
+  height:70px;
   position:absolute;
   top:0;
   animation:mainvisual_opacity 2s infinite;
@@ -437,7 +438,7 @@
 }
 
 .mainvisual_info__container__list__item{
-  line-height:69px;
+  line-height:70px;
   width:240px;
   margin:0;
 }
