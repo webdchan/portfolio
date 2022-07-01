@@ -1,13 +1,30 @@
 #main_visual{
-  /* background-image:url(../images/mainvisual_bg3.png);
-  background-size:cover; */
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  height:1000px;
+  background:radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  height:850px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   position:relative;
+}
+
+/* 메인비주얼 별 */
+
+@keyframes star_tail{
+  0%{width:0;}
+  30%{width:100px;}
+  100%{width:0;}
+}
+
+@keyframes star_shining{
+  0%{width:0;}
+  50%{width:30px;}
+  100%{width:0;}
+}
+
+@keyframes star_shooting{
+  0%{transform:translate(-200px);}
+  100%{transform:translateX(400px);}
 }
 
 .night1{
@@ -24,11 +41,11 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 2px;
+  height: 1px;
   background: linear-gradient(-45deg, #699bffa0, rgba(0, 0, 255, 0));
   border-radius: 999px;
   filter: drop-shadow(0 0 6px #699bffa0);
-  animation: tail 4500ms ease-in-out infinite, shooting 4500ms ease-in-out infinite;
+  animation:star_tail 4500ms ease-in-out infinite, star_shooting 4500ms ease-in-out infinite;
 }
 
 .shooting_star1::before {
@@ -36,11 +53,11 @@
   position: absolute;
   top: calc(50% - 1px);
   right: 0;
-  height: 2px;
+  height: 1px;
   background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #f2945ea5, rgba(0, 0, 255, 0));
   transform: translateX(50%) rotateZ(45deg);
   border-radius: 100%;
-  animation: shining 4500ms ease-in-out infinite;
+  animation:star_shining 4500ms ease-in-out infinite;
 }
 
 .shooting_star1::after {
@@ -48,11 +65,11 @@
   position: absolute;
   top: calc(50% - 1px);
   right: 0;
-  height: 2px;
+  height: 1px;
   background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #699bffa0, rgba(0, 0, 255, 0));
   transform: translateX(50%) rotateZ(45deg);
   border-radius: 100%;
-  animation: shining 4500ms ease-in-out infinite;
+  animation:star_shining 4500ms ease-in-out infinite;
   transform: translateX(50%) rotateZ(-45deg);
 }
 
@@ -126,6 +143,26 @@
   animation-delay: 4305ms;
 }
 
+.shooting_star1:nth-child(8) {
+  top: calc(50% - 30px);
+  left: calc(50% - 199px);
+  animation-delay: 3305ms;
+}
+
+.shooting_star1:nth-child(8)::before, .shooting_star1:nth-child(8)::after {
+  animation-delay: 3305ms;
+}
+
+.shooting_star1:nth-child(9) {
+  top: calc(50% - 50px);
+  left: calc(50% - 329px);
+  animation-delay: 5105ms;
+}
+
+.shooting_star1:nth-child(9)::before, .shooting_star1:nth-child(9)::after {
+  animation-delay: 5105ms;
+}
+
 .shooting_star2 {
   position: absolute;
   left: 50%;
@@ -134,7 +171,7 @@
   background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
   border-radius: 999px;
   filter: drop-shadow(0 0 6px #699bff);
-  animation: tail 4000ms ease-in-out infinite, shooting 4000ms ease-in-out infinite;
+  animation:star_tail 4000ms ease-in-out infinite,star_shooting 4000ms ease-in-out infinite;
 }
 
 .shooting_star2::before {
@@ -146,7 +183,7 @@
   background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #C6CE54, rgba(0, 0, 255, 0));
   transform: translateX(50%) rotateZ(45deg);
   border-radius: 100%;
-  animation: shining 4000ms ease-in-out infinite;
+  animation:star_shining 4000ms ease-in-out infinite;
 }
 
 .shooting_star2::after {
@@ -158,7 +195,7 @@
   background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
   transform: translateX(50%) rotateZ(45deg);
   border-radius: 100%;
-  animation: shining 4000ms ease-in-out infinite;
+  animation:star_shining 4000ms ease-in-out infinite;
   transform: translateX(50%) rotateZ(-45deg);
 }
 
@@ -232,34 +269,38 @@
   animation-delay: 8771ms;
 }
 
-@keyframes tail{
-  0%{width:0;}
-  30%{width:100px;}
-  100%{width:0;}
+.shooting_star2:nth-child(8) {
+  top: calc(50% - 150px);
+  left: calc(50% - 221px);
+  animation-delay: 4571ms;
 }
 
-@keyframes shining{
-  0%{width:0;}
-  50%{width:30px;}
-  100%{width:0;}
+.shooting_star2:nth-child(8)::before, .shooting_star2:nth-child(8)::after {
+  animation-delay: 4571ms;
 }
 
-@keyframes shooting{
-  0%{transform:translate(-200px);}
-  100%{transform:translateX(400px);}
+.shooting_star2:nth-child(9) {
+  top: calc(50% - 350px);
+  left: calc(50% - 421px);
+  animation-delay: 3971ms;
 }
 
-@keyframes shooting_rotation{
-  0%{transform:rotate(0);}
-  50%{transform:scale(1.1);}
-  100%{transform:rotate(360deg);}
+.shooting_star2:nth-child(9)::before, .shooting_star2:nth-child(9)::after {
+  animation-delay: 3971ms;
 }
 
-/* .mainvisual_icon{
-  position:absolute;
-  left:-100px;
-  animation:shooting_rotation 5s 1s infinite;
-} */
+/* 메인비주얼아이콘 */
+
+@keyframes icon_spin{
+  from{transform: rotate(0);}
+  to{transform: rotate(359.9deg);}
+}
+
+@keyframes solar_spin3D{
+  from {transform: rotate3d(0,.35,.20, 360deg);}
+  to{transform: rotate3d(0deg);}
+}
+
 
 .mainvisual_icon{
   position:absolute;
@@ -268,41 +309,155 @@
   margin:0 auto;
 }
 
-.mainvisual_icon img{
-  display:block;
+.solarsystem{
+  position:relative;
+  margin:0 auto;
+  width:850px;
+  height:850px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  animation:solar_spin3D 20s linear 0s infinite;
+}
+
+.solarsystem .orbit {
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border:2px solid #ffffff33;
+	border-radius:50%;
+} 
+
+.solarsystem .planet1_circle{
+	width:800px;
+	height:800px;
+  animation:icon_spin 10s linear 0s infinite;
+}
+
+.solarsystem .planet2_circle {
+	width:650px;
+	height:650px;
+  animation:icon_spin 8s linear 0s infinite;
+}
+
+.solarsystem .planet3_circle {
+	width:500px;
+	height:500px;
+  animation:icon_spin 9s linear 0s infinite;
+}
+
+.solarsystem .planet4_circle {
+	width:350px;
+	height:350px;
+  animation:icon_spin 6s linear 0s infinite;
+}
+
+.solarsystem .planet5_circle{
+	width:200px;
+	height:200px;
+  animation:icon_spin 6s linear 0s infinite;
+}
+
+.solarsystem .planet1,.solarsystem .planet2,.solarsystem .planet3,.solarsystem .planet4,.solarsystem .planet5{
+  background-size:cover;
+	position:absolute;
+	top:-24px;
+  width:48px;
+  height:48px;
+}
+
+.solarsystem .planet1{background-image:url(../images/mainvisual_html.png);}
+.solarsystem .planet2{background-image:url(../images/mainvisual_css.png);}
+.solarsystem .planet3{background-image:url(../images/mainvisual_js.png);}
+.solarsystem .planet4{background-image:url(../images/mainvisual_ps.png);}
+.solarsystem .planet5{background-image:url(../images/mainvisual_ai.png);}
+
+.solarsystem .sun{
+  background-image:url(../images/mainvisual_sun.png);
+  background-size:cover;
+	width:60px;
+	height:60px;
+}
+
+/* 메인비주얼텍스트 */
+
+.mainvisual_info{
   position:absolute;
-  width:80px;
-  height:80px;
-  animation:shooting_rotation 5s infinite;
+  top:28%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  height:300px;
+  font-family:SCD6;
+  letter-spacing:2px;
+  font-size:55px;
+  line-height:69px;
+  color:#ecf0f1;
 }
 
-.mainvisual_icon img:nth-of-type(1){
-  left:600px;
-  top:300px;
+.mainvisual_info__container{
+  margin:0 50px;
+  overflow:hidden;
+  height:69px;
+  padding:0 45px 0 60px;
 }
 
-.mainvisual_icon img:nth-of-type(2){
-  left:750px;
-  top:250px;
+.mainvisual_info__container:after, .mainvisual_info__container:before{
+  content: '';
+  background-size:cover;
+  width:70px;
+  height:69px;
+  position:absolute;
+  top:0;
+  animation:mainvisual_opacity 2s infinite;
 }
 
-
-.mainvisual_icon img:nth-of-type(3){
-  left:900px;
-  top:200px;
+.mainvisual_info__container:before {
+  background-image:url(../images/user-interface.png);
+  left:0;
 }
 
-
-.mainvisual_icon img:nth-of-type(4){
-  left:1050px;
-  top:250px;
+.mainvisual_info__container:after {
+  background-image:url(../images/user-experience.png);
+  right:0;
 }
 
-
-.mainvisual_icon img:nth-of-type(5){
-  left:1200px;
-  top:300px;
+.mainvisual_info__container__text{
+  display:inline;
+  float:left;
+  margin:0;
 }
+
+.mainvisual_info__container__list{
+  margin-top:0;
+  text-align:left;
+  padding-left:420px;
+  list-style:none;
+  animation:mainvisual_change 12s infinite;
+}
+
+.mainvisual_info__container__list__item{
+  line-height:69px;
+  width:240px;
+  margin:0;
+}
+
+@keyframes mainvisual_opacity{
+  0%, 100%{opacity:0.4;}
+  30%, 70%{opacity:0.7;}
+}
+
+@keyframes mainvisual_change{
+  0%, 10%, 100% {transform:translate3d(0, 0, 0);}
+  12%, 22% {transform:translate3d(0, -20%, 0);}
+  24%, 34% {transform:translate3d(0, -40%, 0);}
+  36%, 46% {transform:translate3d(0, -60%, 0);}
+  48%, 58% {transform:translate3d(0, -80%, 0);}
+  60%, 70% {transform:translate3d(0, -60%, 0);}
+  72%, 82% {transform:translate3d(0, -40%, 0);}
+  84%, 94% {transform:translate3d(0, -20%, 0);}
+}
+
 
 
 
