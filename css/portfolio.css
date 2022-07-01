@@ -2532,7 +2532,7 @@ footer .footer_center{
 }
 
 footer .footer_center>p:nth-of-type(1){
-  margin-top:110px;
+  margin-top:120px;
   font-family:'Raleway', sans-serif;
   font-weight:500;
   font-size:45px;
@@ -2620,8 +2620,6 @@ footer .footer_right_in span:nth-of-type(1){top:0px; left:0px; width:2px; height
 footer .footer_right_in span:nth-of-type(2){top:0px; left:0px; width:10px; height:2px;}
 footer .footer_right_in span:nth-of-type(3){bottom:0px; right:0px; width:2px; height:10px;}
 footer .footer_right_in span:nth-of-type(4){bottom:0px; right:0px; width:10px; height:2px;}
-
-
 
 /* ________________ 1200px 이하 해상도일 경우 */
 @media screen and (max-width:1200px){
