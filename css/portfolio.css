@@ -1457,9 +1457,9 @@ section #main3{
   align-items:center;
 }
 
-.fullpage_visual .page_visual_display{background-image:url(../images/gs_display.png);}
-.mainpage_visual .page_visual_display{background-image:url(../images/forb_display.png);}
-.onepage_visual .page_visual_display{background-image:url(../images/gallery_display.png);}
+.fullpage_visual .page_visual_display{background-image:url(../images/gs_display.jpg);}
+.mainpage_visual .page_visual_display{background-image:url(../images/forb_display.jpg);}
+.onepage_visual .page_visual_display{background-image:url(../images/gallery_display.jpg);}
 
 #main3 .page_visual_display span a{
   margin-bottom:50px;
