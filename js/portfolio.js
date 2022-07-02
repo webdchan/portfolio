@@ -324,6 +324,44 @@ $(document).ready(function(){
     $(this).css("background-position","0 0");
   });
 
+  //웹퍼블리싱 Auout Design 버튼 클릭시 모달창 띄우기___________
+
+  // fullpage
+  $("#main3 .fullpage .page_info .page_detail span:first-of-type a").click(function(){
+    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
+    $("#w_popup6").fadeIn(); //w_pop index에 해당하는 팝업보이기
+  });
+
+  // 모바일 닫기
+  $(".w_btn_close6, .w_back6").click(function(){
+    $("html").css({overflowY:"scroll"});
+    $("#w_popup6").stop(true,true).fadeOut();
+  });
+
+  //mainpage
+  $("#main3 .mainpage .page_info .page_detail span:first-of-type a").click(function(){
+    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
+    $("#w_popup7").fadeIn(); //w_pop index에 해당하는 팝업보이기
+  });
+
+  // 모바일 닫기
+  $(".w_btn_close7, .w_back7").click(function(){
+    $("html").css({overflowY:"scroll"});
+    $("#w_popup7").stop(true,true).fadeOut();
+  });
+
+  //onepage
+  $("#main3 .onepage .page_info .page_detail span:first-of-type a").click(function(){
+    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
+    $("#w_popup8").fadeIn(); //w_pop index에 해당하는 팝업보이기
+  });
+
+  // 모바일 닫기
+  $(".w_btn_close8, .w_back8").click(function(){
+    $("html").css({overflowY:"scroll"});
+    $("#w_popup8").stop(true,true).fadeOut();
+  });
+
   /* 반응형웹 */
 
   // 장비 크기 전환

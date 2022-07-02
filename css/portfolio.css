@@ -695,8 +695,9 @@ section #main1{
 .profile_education>p{
   font-family:SCD3;
   font-size:14px;
-  line-height:25px;
+  line-height:28px;
   letter-spacing:1px;
+  text-indent:8px;
 }
 
 /* 프로필 기술 */
@@ -1174,7 +1175,7 @@ section #main2{
 /* 모달창 */
 /* ___________모달창 1 영역 */
 
-#w_popup{
+#w_popup ,#w_popup2{
   display:none;
   position:fixed;
   left:0;
@@ -1185,7 +1186,7 @@ section #main2{
   overflow:auto;
 }
 
-.w_pop_body{
+.w_pop_body, .w_pop_body2{
   position:relative;
   height:100%;
   margin:0 auto;
@@ -1194,7 +1195,7 @@ section #main2{
   z-index:1000;
 }
 
-.w_back{ /* 메뉴 뒤로 나오는 검정배경 */
+.w_back, .w_back2{ /* 메뉴 뒤로 나오는 검정배경 */
   position:fixed;
   left:0;
   top:0;
@@ -1203,7 +1204,7 @@ section #main2{
   background:rgba(0,0,0,0.7);
 }
 
-.w_pop>li{
+.w_pop>li, .w_pop2>li{
   width: 1400px;
   position: absolute;
   text-align: center;
@@ -1212,13 +1213,13 @@ section #main2{
   display: none;
 }
 
-.w_pop>li p{
+.w_pop>li p, .w_pop2>li p{
   text-align:center;
   font-size:30px;
 }
 
 /*버튼영역*/
-.w_btn{
+.w_btn, .w_btn2{
   position:fixed;
   left:50%;
   top:0;
@@ -1231,31 +1232,32 @@ section #main2{
   z-index:10000;
 }
 
-.w_btn>li{
+.w_btn>li, .w_btn2>li{
   cursor: pointer;
   overflow: hidden;
 }
 
-.w_btn .w_btn_close{ /*닫기버튼*/
+.w_btn .w_btn_close, .w_btn2 .w_btn_close2{ /*닫기버튼*/
   height:70px;
   width:80px;
   cursor:pointer;
   border-bottom:1px solid #fff;
 }
-.w_btn .w_btn_close i{ /*아이콘폰트*/
+.w_btn .w_btn_close i, .w_btn2 .w_btn_close2 i{ /*아이콘폰트*/
   position:relative;
   top:15px;
   font-size:40px;
 }
-.w_btn .left_btn, .w_btn .right_btn{float:left;}
-.w_btn .left_btn i, .w_btn .right_btn i{
+.w_btn .left_btn, .w_btn .right_btn, .w_btn2 .left_btn2, .w_btn2 .right_btn2{float:left;}
+.w_btn .left_btn i, .w_btn .right_btn i, .w_btn2 .left_btn2 i, .w_btn2 .right_btn2 i{
   position:relative;
   top:10px;
   font-size:30px;
   width:40px;
   height:50px;
 }
-.w_btn .w_page{ 
+
+.w_btn .w_page, .w_btn2 .w_page2{ 
   font-size:12px;
   color:#fff;
   width:80px;
@@ -1263,96 +1265,6 @@ section #main2{
   height:50px;
   text-align:center;
   border-top:1px solid #fff;
-}
-
-/* ___________모달창 2 영역 */
-
-#w_popup2{
-  display:none;
-  position:fixed;
-  left:0;
-  top:0;
-  width:100%;
-  height:100%;
-  z-index:1000;
-  overflow:auto;
-}
-
-.w_pop_body2{
-  position:relative;
-  height:100%;
-  margin:0 auto;
-  width:1400px;
-  background:#fff;
-  z-index:1000;
-}
-
-.w_back2{ /* 메뉴 뒤로 나오는 검정배경 */
-  position:fixed;
-  left:0;
-  top:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.7);
-}
-
-.w_pop2>li{
-  width: 1400px;
-  position: absolute;
-  text-align: center;
-  cursor: default;
-  background: #fff;
-  display: none;
-}
-.w_pop2>li p{
-  text-align:center;
-  font-size:30px;
-}
-
-/*버튼영역*/
-.w_btn2{
-  position:fixed;
-  left:50%;
-  top:0;
-  margin-left:710px;
-  width:80px;
-  height:150px;
-  color:#fff;
-  text-align:center;
-  overflow:hidden;
-  z-index:10000;
-}
-.w_btn2>li{
-  cursor: pointer;
-  overflow: hidden;
-}
-.w_btn2 .w_btn_close2{ /*닫기버튼*/
-  height:70px;
-  width:80px;
-  cursor:pointer;
-  border-bottom:1px solid #fff;
-}
-.w_btn2 .w_btn_close2 i{ /*아이콘폰트*/
-  position:relative;
-  top:15px;
-  font-size:40px;
-}
-.w_btn2 .left_btn2, .w_btn2 .right_btn2{float:left;}
-.w_btn2 .left_btn2 i, .w_btn2 .right_btn2 i{
-  position:relative;
-  top:10px;
-  font-size:30px;
-  width:40px;
-  height:50px;
-}
-.w_btn2 .w_page2{ 
-  font-size:12px;
-  color:#fff;
-  width:80px;
-  padding-top:10px;
-  height:50px;
-  text-align:center;
-   border-top:1px solid #fff;
 }
 
 /* 웹퍼블리싱 */
@@ -1506,6 +1418,8 @@ section #main3{
   transition:all 0.5s ease-in-out;
 }
 
+#main3 .page_info .page_detail span:first-of-type a{cursor:pointer;}
+
 #main3 .fullpage .page_info .page_detail span a{border:1px solid #5137c4; color:#5137c4;}
 #main3 .fullpage .page_info .page_detail span a:hover{background-color:#5137c4; color:#fff;}
 #main3 .mainpage .page_info .page_detail span a{border:1px solid #f28b0c; color:#f28b0c;}
@@ -1564,6 +1478,79 @@ section #main3{
 .fullpage .page_visual_display:hover span a{background-color:#a291eb8e;}
 .mainpage .page_visual_display:hover span a{background-color:#f28b0c5f;}
 .onepage .page_visual_display:hover span a{background-color:#2d53426f;}
+
+/* ___________웰퍼블리싱 모달 */
+
+#w_popup6, #w_popup7, #w_popup8{
+  display:none;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  z-index:1000;
+  overflow:auto;
+}
+
+.w_pop_body6, .w_pop_body7, .w_pop_body8{
+  position:relative;
+  height:100%;
+  margin:0 auto;
+  width:1400px;
+  background:#fff;
+  z-index:1000;
+}
+
+.w_back6, .w_back7, .w_back8{ /* 메뉴 뒤로 나오는 검정배경 */
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+}
+
+.w_pop6>img, .w_pop7>img, .w_pop8>img{
+  display:none;
+  width: 1400px;
+  position: absolute;
+  text-align: center;
+  cursor: default;
+  background:#fff;
+  display:none;
+}
+
+/*버튼영역*/
+.w_btn6, .w_btn7, .w_btn8{
+  position:fixed;
+  left:50%;
+  top:0;
+  margin-left:710px;
+  width:80px;
+  height:150px;
+  color:#fff;
+  text-align:center;
+  overflow:hidden;
+  z-index:10000;
+}
+
+.w_btn6>li, .w_btn7>li, .w_btn8>li{
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.w_btn6 .w_btn_close6, .w_btn7 .w_btn_close7, .w_btn8 .w_btn_close8{ /*닫기버튼*/
+  height:70px;
+  width:80px;
+  cursor:pointer;
+  border-bottom:1px solid #fff;
+}
+
+.w_btn6 .w_btn_close6 i, .w_btn7 .w_btn_close7 i, .w_btn8 .w_btn_close8 i{ /*아이콘폰트*/
+  position:relative;
+  top:15px;
+  font-size:40px;
+}
 
 /* 반응형웹 */
 @keyframes gradient{
