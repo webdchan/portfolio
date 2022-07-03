@@ -225,22 +225,22 @@ $(document).ready(function(){
   //DETAIL 버튼 클릭시 모달창1 띄우기___________
   $(".webdsign_tab1_graphic>ul>li").click(function(){
     
-    w_pop=$(this).index(); //Detail 버튼 부모의 index
-    $(".w_page span:nth-child(1)").text(w_pop+1); //오른쪽 상단 페이지 넘버
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".w_pop>li").eq(w_pop).show(); //w_pop index에 해당하는 팝업보이기
-    $("#w_popup").fadeIn(); //검정배경
+    w_pop=$(this).index(); 
+    $(".w_page span:nth-child(1)").text(w_pop+1); 
+    $("html").css({overflowY:"hidden"}); 
+    $(".w_pop>li").eq(w_pop).show(); 
+    $("#w_popup").fadeIn(); 
   });
 
   /*오른쪽 상단 버튼-다음보기*/
   $(".w_btn .right_btn").click(function(){
 
-    $("#w_popup").scrollTop(0); /*스크롤 상단으로 올리기*/      
+    $("#w_popup").scrollTop(0);   
     if(w_pop<9){
        $(".w_pop>li").eq(w_pop).stop(true,true).fadeOut(); 
        w_pop++;   
 
-       $(".w_page span:nth-child(1)").text(w_pop+1); /*페이지 번호*/
+       $(".w_page span:nth-child(1)").text(w_pop+1); 
        $(".w_pop>li").eq(w_pop).stop(true,true).fadeIn();         
     }
  });
@@ -248,12 +248,12 @@ $(document).ready(function(){
   /*오른쪽 상단 버튼-이전보기*/
  $(".w_btn .left_btn").click(function(){
 
-    $("#w_popup").scrollTop(0); /*스크롤 상단으로 올리기*/
+    $("#w_popup").scrollTop(0); 
     if(w_pop>0){
        $(".w_pop>li").eq(w_pop).stop(true,true).fadeOut();
        w_pop--;         
 
-       $(".w_page span:nth-child(1)").text(w_pop+1); /*페이지번호*/
+       $(".w_page span:nth-child(1)").text(w_pop+1);
        $(".w_pop>li").eq(w_pop).stop(true,true).fadeIn();
     }
  });
@@ -268,21 +268,21 @@ $(document).ready(function(){
   //DETAIL 버튼 클릭시 모달창2 띄우기___________
   $(".webdsign_tab2_uiux>ul>li").click(function(){
     
-    w_pop2=$(this).index(); //Detail 버튼 부모의 index
-    $(".w_page2 span:nth-child(1)").text(w_pop2+1); //오른쪽 상단 페이지 넘버
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".w_pop2>li").eq(w_pop2).show(); //w_pop index에 해당하는 팝업보이기
-    $("#w_popup2").fadeIn(); //검정배경
+    w_pop2=$(this).index(); 
+    $(".w_page2 span:nth-child(1)").text(w_pop2+1);
+    $("html").css({overflowY:"hidden"}); 
+    $(".w_pop2>li").eq(w_pop2).show();
+    $("#w_popup2").fadeIn(); 
   });
 
   /*오른쪽 상단 버튼-다음보기*/
   $(".w_btn2 .right_btn2").click(function(){
 
-    $("#w_popup2").scrollTop(0); /*스크롤 상단으로 올리기*/      
+    $("#w_popup2").scrollTop(0);     
     if(w_pop2<7){
        $(".w_pop2>li").eq(w_pop2).stop(true,true).fadeOut(); 
        w_pop2++;   
-       $(".w_page2 span:nth-child(1)").text(w_pop2+1); /*페이지 번호*/
+       $(".w_page2 span:nth-child(1)").text(w_pop2+1);
        $(".w_pop2>li").eq(w_pop2).stop(true,true).fadeIn();         
     }
  });
@@ -290,11 +290,11 @@ $(document).ready(function(){
   /*오른쪽 상단 버튼-이전보기*/
  $(".w_btn2 .left_btn2").click(function(){
 
-    $("#w_popup2").scrollTop(0); /*스크롤 상단으로 올리기*/
+    $("#w_popup2").scrollTop(0); 
     if(w_pop2>0){
        $(".w_pop2>li").eq(w_pop2).stop(true,true).fadeOut();
        w_pop2--;         
-       $(".w_page2 span:nth-child(1)").text(w_pop2+1); /*페이지번호*/
+       $(".w_page2 span:nth-child(1)").text(w_pop2+1); 
        $(".w_pop2>li").eq(w_pop2).stop(true,true).fadeIn();
     }
  });
@@ -328,8 +328,8 @@ $(document).ready(function(){
 
   // fullpage
   $("#main3 .fullpage .page_info .page_detail span:first-of-type a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $("#w_popup6").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $("#w_popup6").fadeIn(); 
   });
 
   // 모바일 닫기
@@ -340,8 +340,8 @@ $(document).ready(function(){
 
   //mainpage
   $("#main3 .mainpage .page_info .page_detail span:first-of-type a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $("#w_popup7").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $("#w_popup7").fadeIn(); 
   });
 
   // 모바일 닫기
@@ -352,8 +352,8 @@ $(document).ready(function(){
 
   //onepage
   $("#main3 .onepage .page_info .page_detail span:first-of-type a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $("#w_popup8").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $("#w_popup8").fadeIn(); 
   });
 
   // 모바일 닫기
@@ -393,8 +393,8 @@ $(document).ready(function(){
   /* 반응형 모바일 목업*/
   //DETAIL 버튼 클릭시 모달창2 띄우기___________
   $(".responsive_mobile .page_visual_display a, #main4 .page_info .page_detail2 span:nth-of-type(1) a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".mockup_mobile1").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $(".mockup_mobile1").fadeIn(); 
   });
 
   // 반응형 모바일 닫기
@@ -407,8 +407,8 @@ $(document).ready(function(){
  /* 반응형 태블렛 목업*/
   //DETAIL 버튼 클릭시 모달창2 띄우기___________
   $(".responsive_tablet .page_visual_display a, #main4 .page_info .page_detail2 span:nth-of-type(2) a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".mockup_tablet").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $(".mockup_tablet").fadeIn(); 
   });
 
   // 반응형 태블렛 닫기
@@ -419,25 +419,22 @@ $(document).ready(function(){
  });
 
  /* main5 모바일 비주얼 */
-
    //자동으로 슬라이드 함수생성
    function bannerAuto(){
 
     $(".mobilepage .mobile_visual ul").stop().animate({marginLeft:"-=280px"},1200,function(){
-      $(".mobilepage .mobile_visual ul li:first-child").appendTo(".mobilepage .mobile_visual ul"); //첫번째 이미지 맨뒤로 이동
-      $(this).css({marginLeft:"0px"}); //최종목적지
+      $(".mobilepage .mobile_visual ul li:first-child").appendTo(".mobilepage .mobile_visual ul"); 
+      $(this).css({marginLeft:"0px"}); 
     });
-
   }
   bauto=setInterval(bannerAuto,2400);
-
 
      //다음보기
     $(".mobile_visual_btn_right").click(function(){
       clearInterval(bauto);
       $(".mobilepage .mobile_visual ul").stop().animate({marginLeft:"-=280px"},1200,function(){
-        $(".mobilepage .mobile_visual ul li:first-child").appendTo(".mobilepage .mobile_visual ul"); //첫번째 이미지 맨뒤로 이동
-        $(this).css({marginLeft:"0px"}); //최종목적지
+        $(".mobilepage .mobile_visual ul li:first-child").appendTo(".mobilepage .mobile_visual ul"); 
+        $(this).css({marginLeft:"0px"}); 
       });
       bauto=setInterval(bannerAuto,2400);
     });
@@ -446,13 +443,12 @@ $(document).ready(function(){
     $(".mobile_visual_btn_left").click(function(){
       clearInterval(bauto);
       $(".mobilepage .mobile_visual ul").stop().animate({marginLeft:"+=280px"},1200,function(){
-        $(".mobilepage .mobile_visual ul li:last-child").prependTo(".mobilepage .mobile_visual ul"); //첫번째 이미지 맨뒤로 이동
-        $(this).css({marginLeft:"0px"}); //최종목적지
+        $(".mobilepage .mobile_visual ul li:last-child").prependTo(".mobilepage .mobile_visual ul"); 
+        $(this).css({marginLeft:"0px"}); 
       });
       bauto=setInterval(bannerAuto,2400);
     });
 
-    //마우스를 올리면 슬라이드 자동함수 멈추고, 마우스를 내리면 다시 자동함수 실행...
     $(".mobilepage .mobile_visual").hover(function(){
       clearInterval(bauto);
     },function(){
@@ -462,8 +458,8 @@ $(document).ready(function(){
     /* 모바일 목업*/
   //DETAIL 버튼 클릭시 모달창2 띄우기___________
   $("#main5 .mobilepage .mobile_display .page_visual_display span a, #main5 .page_info .page_info_bottom .page_detail1 a, #webplanning_tab3_c4 .webplanning_content .page_visual_display span a, #webplanning_tab3_c4 .page_detail1 a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".mockup_mobile2").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $(".mockup_mobile2").fadeIn(); 
   });
 
   // 모바일 닫기
@@ -474,36 +470,31 @@ $(document).ready(function(){
   });
 
   /* 웹기획 탭메뉴 */
- 
   $(".webplanning_tab_panel>li:not(:first)").hide();
-  //첫번째를 제외한 나머지 내용
 
   $(".webplanning_tab>li").click(function(){
-    $(".webplanning_tab>li").removeClass("webplanning_tab_selected"); //기존선택된 selected 클래스 삭제
-    $(this).addClass("webplanning_tab_selected"); //새로 선택된 selected 클래스 생성
-    $(".webplanning_tab_panel>li").hide(); //기존의 보여진 내용 숨기기
-    $($(this).find("a").attr("href")).stop(true,true).fadeIn(); //새로 선택된 내용 href 연결된 내용 보여주기
+    $(".webplanning_tab>li").removeClass("webplanning_tab_selected"); 
+    $(this).addClass("webplanning_tab_selected"); 
+    $(".webplanning_tab_panel>li").hide(); 
+    $($(this).find("a").attr("href")).stop(true,true).fadeIn();
   });
   
-
   $(".webplanning_tab2_c_panel>li:not(:first)").hide();
-  //첫번째를 제외한 나머지 내용
 
   $(".webplanning_tab2_c>li").click(function(){
-    $(".webplanning_tab2_c>li").removeClass("webplanning_tab2_c_selected"); //기존선택된 selected 클래스 삭제
-    $(this).addClass("webplanning_tab2_c_selected"); //새로 선택된 selected 클래스 생성
-    $(".webplanning_tab2_c_panel>li").hide(); //기존의 보여진 내용 숨기기
-    $($(this).find("a").attr("href")).stop(true,true).fadeIn(); //새로 선택된 내용 href 연결된 내용 보여주기
+    $(".webplanning_tab2_c>li").removeClass("webplanning_tab2_c_selected"); 
+    $(this).addClass("webplanning_tab2_c_selected"); 
+    $(".webplanning_tab2_c_panel>li").hide(); 
+    $($(this).find("a").attr("href")).stop(true,true).fadeIn();
   });
 
   $(".webplanning_tab3_c_panel>li:not(:first)").hide();
-  //첫번째를 제외한 나머지 내용
 
   $(".webplanning_tab3_c>li").click(function(){
-    $(".webplanning_tab3_c>li").removeClass("webplanning_tab3_c_selected"); //기존선택된 selected 클래스 삭제
-    $(this).addClass("webplanning_tab3_c_selected"); //새로 선택된 selected 클래스 생성
-    $(".webplanning_tab3_c_panel>li").hide(); //기존의 보여진 내용 숨기기
-    $($(this).find("a").attr("href")).stop(true,true).fadeIn(); //새로 선택된 내용 href 연결된 내용 보여주기
+    $(".webplanning_tab3_c>li").removeClass("webplanning_tab3_c_selected"); 
+    $(this).addClass("webplanning_tab3_c_selected"); 
+    $(".webplanning_tab3_c_panel>li").hide();
+    $($(this).find("a").attr("href")).stop(true,true).fadeIn(); 
   });
 
    //썸네일,큰이미지,설명텍스트가 바뀌는 함수 만들기
@@ -738,44 +729,44 @@ $(document).ready(function(){
      /* 웹기획 pdf*/
   //DETAIL 버튼 클릭시 모달창2 띄우기___________
   $("#webplanning_tab1_c1 .pdf_button a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".webplanning_tab1_c1_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $(".webplanning_tab1_c1_pdf").fadeIn(); 
   });
   $("#webplanning_tab2_c1 .pdf_button a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".webplanning_tab2_c1_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $(".webplanning_tab2_c1_pdf").fadeIn(); 
   });
   $("#webplanning_tab2_c2 .pdf_button a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".webplanning_tab2_c2_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $(".webplanning_tab2_c2_pdf").fadeIn(); 
   });
   $("#webplanning_tab2_c3 .pdf_button a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".webplanning_tab2_c3_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $(".webplanning_tab2_c3_pdf").fadeIn(); 
   });
   $("#webplanning_tab2_c4 .pdf_button a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".webplanning_tab2_c4_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $(".webplanning_tab2_c4_pdf").fadeIn(); 
   });
   $("#webplanning_tab3_c1 .pdf_button a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".webplanning_tab3_c1_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $(".webplanning_tab3_c1_pdf").fadeIn(); 
   });
   $("#webplanning_tab3_c2 .pdf_button a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".webplanning_tab3_c2_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $(".webplanning_tab3_c2_pdf").fadeIn();
   });
   $("#webplanning_tab3_c3 .pdf_button a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".webplanning_tab3_c3_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $(".webplanning_tab3_c3_pdf").fadeIn(); 
   });
   $("#webplanning_tab3_c5 .pdf_button a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".webplanning_tab3_c5_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"});
+    $(".webplanning_tab3_c5_pdf").fadeIn(); 
   });
   $("#webplanning_tab4_c1 .pdf_button a").click(function(){
-    $("html").css({overflowY:"hidden"}); //기존 html 스크롤 숨기기
-    $(".webplanning_tab4_c1_pdf").fadeIn(); //w_pop index에 해당하는 팝업보이기
+    $("html").css({overflowY:"hidden"}); 
+    $(".webplanning_tab4_c1_pdf").fadeIn(); 
   });
 
   // 모바일 닫기
